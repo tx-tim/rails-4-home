@@ -1,0 +1,9 @@
+
+<% if (@user.errors.any?) %>
+<p>I got 99 problems, but you have <%= @user.errors.count %> </p>
+	<ul>
+		<% @user.errors.full_messages.each do |er| %>
+			<li>* <%= er %></li>
+		<% end %>
+	</ul>
+<% end %>
