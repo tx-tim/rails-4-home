@@ -1,13 +1,16 @@
 require 'spec_helper'
 
 describe User do
-	before { @user = User.new(name: "test", email: "foo@bar.com") }
+	before { @user = User.new(name: "test", email: "foo@bar.com", password: "foobar", password_confirmation: "foobar") }
 
 	subject { @user }
 	
 	it { should respond_to(:name) }
 	it { should respond_to(:email) }
 	it { should respond_to(:password_digest)}
+	it { should respond_to(:password)}
+	it { should respond_to(:password_confirmation)}
+	it { should respond_to(:authenticate)}
 
 	it { should be_valid }
 
@@ -59,6 +62,45 @@ describe User do
 		end
 
 		it { should_not be_valid }
+	end
 
+	describe "when password is blank" do
+		before do
+		    @user = User.new(name: "Example User", email: "user@example.com",
+                 password: " ", password_confirmation: " ")
+		end
+
+		it { should_not be_valid }
+	end
+
+	describe "when password is less than 5 chars" do
+		before { @user.password = @user.password_confirmation = 'a' * 5 }
+		it { should_not be_valid }
+	end
+
+
+
+	describe "when password doesn't match password_confirmation" do
+		before do
+			@user.password_confirmation = "mismatch"
+		end
+
+		it { should_not be_valid }
+	end
+
+	describe "return value of authenticate method" do
+
+		before { @user.save }
+		let(:found_user) { User.find_by(email: @user.email) }
+
+		describe "when user logs in with valid password" do
+			it { should eq found_user.authenticate(@user.password) }
+		end
+
+		describe "when user logs in with invalid password" do
+			let(:user_with_invalid_password) { found_user.authenticate("invalid")}
+			it { should_not eq user_with_invalid_password }
+			specify { expect(user_with_invalid_password).to be_false }
+		end
 	end
 end
