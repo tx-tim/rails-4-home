@@ -1,7 +1,7 @@
 Timothyproffitt::Application.routes.draw do
-
+  resources :users
+  match "/", to: "static_pages#home", via: "get"
   match "/signup", to: "users#new", via: "get"
-  get "static_pages/home"
   get "static_pages/help"
   get "static_pages/about"
   # The priority is based upon order of creation: first created -> highest priority.
