@@ -1,7 +1,12 @@
 Timothyproffitt::Application.routes.draw do
+
+  resources :sessions, only: [:new, :create, :destroy]
+
   resources :users
   match "/", to: "static_pages#home", via: "get"
   match "/signup", to: "users#new", via: "get"
+  match "/signin", to: "sessions#new", via: "get"
+  match "/signout", to: "sessions#destroy", via: "get"
   get "static_pages/help"
   get "static_pages/about"
   # The priority is based upon order of creation: first created -> highest priority.
