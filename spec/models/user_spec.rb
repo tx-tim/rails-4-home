@@ -105,11 +105,13 @@ describe User do
 		end
 	end
 
-	describe "sign on at creation" do
+	describe "remember token" do
 		before { @user.save }
 
 		describe "when user is created" do
 			its(:remember_token) { should_not be_blank }
 		end
 	end
+
+
 end

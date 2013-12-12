@@ -40,4 +40,9 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
   config.include Capybara::DSL
+
+  def test_sign_in(user)
+    controller.current_user = user
+  end
+  
 end
