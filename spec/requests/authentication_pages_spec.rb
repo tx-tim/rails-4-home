@@ -1,11 +1,11 @@
 require 'spec_helper'
 
 
-describe "Authentication Pages via Sessions Controller" do
+describe "Authentication" do
 	
 	subject { page }
 
-	describe "Signin Page" do
+	describe "Signin" do
 		before { visit signin_path }
 		let(:submit){ "Sign In"}
 
@@ -24,7 +24,7 @@ describe "Authentication Pages via Sessions Controller" do
 			end
 		end
 
-		describe "Successful Sign In" do
+		describe "with valid signin" do
 			let(:user) { FactoryGirl.create(:user) }
 			before do
 				fill_in "Email", with: user.email.upcase
@@ -33,14 +33,13 @@ describe "Authentication Pages via Sessions Controller" do
 			end
 
 			it { should have_title(user.name) }
-			it { should have_link('Signout', href: signout_path) }
+			it { should have_link('Sign Out', href: signout_path) }
+			it { should have_link('Profile', href: user_path(user)) }
+
+			describe "followed by signout" do
+		       before { click_link "Sign Out" }
+		       it { should have_link('Sign In') }
+		    end
 		end
-
-	end
-
-
-	describe "Signout Page" do
-		before { visit signout_path }
-		it { should have_content("Sign Out")}
 	end
 end
