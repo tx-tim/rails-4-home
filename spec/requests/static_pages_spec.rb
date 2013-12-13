@@ -4,7 +4,7 @@ describe "Static Pages" do
   describe "Home Page" do
     it "should have the content Home Page" do
       # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      visit static_pages_home_path
+      visit root_path
       expect(page).to have_content("Home Page")
     end
   end
