@@ -1,4 +1,5 @@
 Timothyproffitt::Application.routes.draw do
+  get "casham/one_col"
   root 'static_pages#home'
   resources :sessions, only: [:new, :create, :destroy]
 
