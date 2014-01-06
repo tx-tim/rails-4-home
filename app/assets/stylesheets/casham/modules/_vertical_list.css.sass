@@ -1,15 +1,14 @@
-
 //trying out this BEM syntax
 
-.test-list
+.vertical-list
     
     >ul
         list-style-position: inside
         @include no-bullet
 
 
-.test-list__heading
-    color: blue
+.vertical-list__heading
+    color: $caPrimaryColor
     
     &.h1
         font-size: ms(3, $base-size)
@@ -20,5 +19,10 @@
     &.h3
         font-size: ms(1, $base-size)   
 
-.test-list__p
+.vertical-list__item
+    >a
+        color: $caAccentColor
+        text-decoration: underline
+
+.vertical-list__p
     font-size: ms(0)
