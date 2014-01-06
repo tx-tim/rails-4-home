@@ -1,0 +1,92 @@
+@mixin button-structure{
+	.button{
+		cursor: pointer; 
+		display: inline-block; 
+		font-family: inherit; 
+		font-size: ms(0); 
+		font-weight: bold; 
+		line-height: 1; 
+		margin: 0; 
+		padding: $btnBase ($btnBase * 2) ($btnBase + 2); 
+		position: relative; 
+		text-align: center; 
+		text-decoration: none; 
+		@include transition(all .15s ease-in-out);
+		@include border-radius(5px);
+	}
+}
+
+@mixin widget{
+	p{
+		font-style: normal;
+	}
+	.widget-header{
+		position: relative;
+	}
+
+	.widget-body{
+		padding-bottom: 1em;
+		border-bottom: 1px solid $secondaryColor;
+	}
+
+	@include button-structure;
+	
+	.button{
+		font-size: 13px;
+		padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+	}
+}
+
+@mixin main-body-widget{
+	@include widget;
+	h1, h2, h3, h4, h5, h6{
+	  font-size: 14px;
+	}
+}
+
+@mixin side-bar-widget{
+	@include widget;
+}
+
+@mixin vertical-list-widget{
+	.list-widget-item{
+		margin-bottom: 17px;
+	}
+}
+
+@mixin horizontal-list-widget{
+	@include respondTo(smallScreen){
+		.widget-header,
+		.widget-body{
+			text-align: center;
+		}
+	}
+}
+
+@mixin store-hours{
+	table{
+		margin-bottom: ms(1);
+		margin-top: ms(1) / 4;
+	}
+	.day{
+		padding-right: 1em;
+		line-height: 1.4;
+	}
+}
+
+
+@mixin button-color($bgColor, $textColor){
+	.button{
+		background: $bgColor; 
+		border: 1px solid darken(($bgColor), 15%); 
+		@include box-shadow(0 1px 0 lighten($bgColor, 15%) inset);
+		color: $textColor; 
+
+	    /* Hovers */
+	    &:hover, &:focus { 
+	    	color: $textColor; 
+	    	background-color: darken(($bgColor), 10%); 
+	    	@include box-shadow(0 1px 0 darken($bgColor, 15%) inset);
+	    }
+	}
+}

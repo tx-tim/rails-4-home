@@ -1,0 +1,250 @@
+
+
+@font-face {
+	font-family: "cafont";
+	src: asset-url('cafont.eot');
+	src: asset-url('cafont.eot?#iefix') format('embedded-opentype'),
+		 asset-url('cafont.woff') format('woff'),
+		 asset-url('cafont.ttf') format('truetype'),
+		 asset-url('cafont.svg#cafont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+//+font-face("cafont", font-files("cafont.woff", "cafont.ttf","cafont.svg#cafont"), "cafont.eot")
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'cafont';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-location-17-icon, .icon-youtube, .icon-twitter, .icon-pinterest, .icon-google-plus, .icon-facebook, .icon-hamburger, .icon-hamburger2, .icon-diamonds, .icon-music, .icon-camera, .icon-headphones, .icon-credit, .icon-coin, .icon-cart, .icon-bookmark, .icon-heart, .icon-home, .icon-close, .icon-checkbox-checked, .icon-checkbox-unchecked, .icon-checkbox-partial, .icon-undo, .icon-redo, .icon-forward, .icon-reply, .icon-box-add, .icon-location, .icon-location-2, .icon-alarm, .icon-bell, .icon-spinner, .icon-user, .icon-users, .icon-key, .icon-pie, .icon-bars, .icon-home-2, .icon-spinner-2, .icon-print, .icon-phone, .icon-plus, .icon-radio-checked, .icon-radio-unchecked, .icon-arrow-right, .icon-arrow-down, .icon-checkmark, .icon-rocket, .icon-hamburger-2, .icon-hamburger2-2, .icon-arrow-down-2, .icon-arrow-right-2, .icon-tv, .icon-warning, .icon-rss-alt, .icon-moon-stroke, .icon-brush, .icon-target, .icon-bars-2, .icon-book-alt2, .icon-chat-alt-stroke, .icon-chat-alt-fill, .icon-bubbles, .icon-bubble, .icon-bubbles-2, .icon-bubbles-3, .icon-target-2, .icon-globe {
+	font-family: 'cafont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-location-17-icon:before {
+	content: "\e02f";
+}
+.icon-youtube:before {
+	content: "\e000";
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-pinterest:before {
+	content: "\e002";
+}
+.icon-google-plus:before {
+	content: "\e003";
+}
+.icon-facebook:before {
+	content: "\e004";
+}
+.icon-hamburger:before {
+	content: "\e005";
+}
+.icon-hamburger2:before {
+	content: "\e006";
+}
+.icon-diamonds:before {
+	content: "\e007";
+}
+.icon-music:before {
+	content: "\e008";
+}
+.icon-camera:before {
+	content: "\e009";
+}
+.icon-headphones:before {
+	content: "\e00a";
+}
+.icon-credit:before {
+	content: "\e00b";
+}
+.icon-coin:before {
+	content: "\e00c";
+}
+.icon-cart:before {
+	content: "\e00d";
+}
+.icon-bookmark:before {
+	content: "\e00f";
+}
+.icon-heart:before {
+	content: "\e00e";
+}
+.icon-home:before {
+	content: "\e010";
+}
+.icon-close:before {
+	content: "\e011";
+}
+.icon-checkbox-checked:before {
+	content: "\e012";
+}
+.icon-checkbox-unchecked:before {
+	content: "\e013";
+}
+.icon-checkbox-partial:before {
+	content: "\e014";
+}
+.icon-undo:before {
+	content: "\e015";
+}
+.icon-redo:before {
+	content: "\e016";
+}
+.icon-forward:before {
+	content: "\e017";
+}
+.icon-reply:before {
+	content: "\e018";
+}
+.icon-box-add:before {
+	content: "\e01a";
+}
+.icon-location:before {
+	content: "\e019";
+}
+.icon-location-2:before {
+	content: "\e01b";
+}
+.icon-alarm:before {
+	content: "\e01c";
+}
+.icon-bell:before {
+	content: "\e01d";
+}
+.icon-spinner:before {
+	content: "\e01e";
+}
+.icon-user:before {
+	content: "\e01f";
+}
+.icon-users:before {
+	content: "\e020";
+}
+.icon-key:before {
+	content: "\e021";
+}
+.icon-pie:before {
+	content: "\e022";
+}
+.icon-bars:before {
+	content: "\e023";
+}
+.icon-home-2:before {
+	content: "\e024";
+}
+.icon-spinner-2:before {
+	content: "\e025";
+}
+.icon-print:before {
+	content: "\e026";
+}
+.icon-phone:before {
+	content: "\e027";
+}
+.icon-plus:before {
+	content: "\e028";
+}
+.icon-radio-checked:before {
+	content: "\e029";
+}
+.icon-radio-unchecked:before {
+	content: "\e02a";
+}
+.icon-arrow-right:before {
+	content: "\e02b";
+}
+.icon-arrow-down:before {
+	content: "\e02c";
+}
+.icon-checkmark:before {
+	content: "\e02d";
+}
+.icon-rocket:before {
+	content: "\e02e";
+}
+.icon-hamburger-2:before {
+	content: "\e030";
+}
+.icon-hamburger2-2:before {
+	content: "\e031";
+}
+.icon-arrow-down-2:before {
+	content: "\e032";
+}
+.icon-arrow-right-2:before {
+	content: "\e033";
+}
+.icon-tv:before {
+	content: "\e034";
+}
+.icon-warning:before {
+	content: "\e035";
+}
+.icon-rss-alt:before {
+	content: "\e036";
+}
+.icon-moon-stroke:before {
+	content: "\e037";
+}
+.icon-brush:before {
+	content: "\e038";
+}
+.icon-target:before {
+	content: "\e039";
+}
+.icon-bars-2:before {
+	content: "\e03a";
+}
+.icon-book-alt2:before {
+	content: "\e03b";
+}
+.icon-chat-alt-stroke:before {
+	content: "\e03c";
+}
+.icon-chat-alt-fill:before {
+	content: "\e03d";
+}
+.icon-bubbles:before {
+	content: "\e03e";
+}
+.icon-bubble:before {
+	content: "\e03f";
+}
+.icon-bubbles-2:before {
+	content: "\e040";
+}
+.icon-bubbles-3:before {
+	content: "\e041";
+}
+.icon-target-2:before {
+	content: "\e042";
+}
+.icon-globe:before {
+	content: "\e043";
+}

@@ -1,0 +1,69 @@
+
+
+%two-column{
+  //styles for the hero section
+
+  .page-headline{
+    font-weight: normal;
+  }
+
+  .page-container{
+    padding-bottom: 2em;
+  }
+  
+  //@include breadcrumbs;
+
+  //styles for the side-bar section
+  .side-bar{
+    margin-top: -112px;
+    @include border-radius(5px);
+    min-height: 500px;
+    background-color: #fff;
+
+    .side-bar-container{
+      margin-top: 1em;
+    }
+    
+    h1, h2, h3, h4, h5, h6{
+      font-size: ms(1);
+    }
+
+    .lead{
+      line-height: 1.3
+    }
+
+  }
+
+  //responsive styles
+  @include respondTo(smallScreen){
+    .page-headline-container{
+      margin-top: 30px;
+    }
+
+    .side-bar{
+      margin-top: 0;
+
+      .side-bar-container{
+        min-height: 100px;
+      } 
+    }
+  }
+}
+
+
+.tcl, .ocl{
+  @extend %two-column;
+
+  .page-headline-container{
+    margin-top: 212px;
+  }
+}
+
+.tcc, .occ{
+  @extend %two-column;
+  
+  .page-headline-container{
+    margin-top: 140px;
+  }
+}
+

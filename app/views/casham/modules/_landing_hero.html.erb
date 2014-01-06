@@ -1,0 +1,35 @@
+<% headline_text = "Cash America Headline" if local_assigns[:headline_text].nil? %>
+
+<div class="page-hero">
+  <div class="row page-hero-container">
+    
+      
+    <% if cols == "eight" %>
+      
+      <div class="eight columns offset-by-four page-headline-container">
+    
+    <% else %>
+    
+      <div class="twelve columns page-headline-container">
+    
+    <% end %>
+
+
+      <h1 class="page-headline"><%= headline_text %></h1>
+
+      <ul class="breadcrumbs">
+        <li>
+          <a href="#">Home</a></li>
+        
+        <li>
+          <a href="#">Features</a></li>
+        
+        <li class="unavailable">
+          <a href="#">Gene Splicing</a></li>
+        
+        <li class="current">
+          <a href="#">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

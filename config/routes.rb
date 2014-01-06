@@ -12,6 +12,12 @@ Timothyproffitt::Application.routes.draw do
   match '/signout', :to => 'sessions#destroy', via: :delete
   get "static_pages/help"
   get "static_pages/about"
+
+  get "casham/index"
+  get "casham/template_tcc"
+  get "casham/template_occ"
+  get "casham/store_search_page"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

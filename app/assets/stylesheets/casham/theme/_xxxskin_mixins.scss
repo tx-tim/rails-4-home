@@ -1,0 +1,19 @@
+@import "compass/css3";
+@import "../components/colors";
+@import "../components/mixins";
+
+@mixin button-color($bgColor, $textColor){
+	.button{
+		background: $bgColor; 
+		border: 1px solid darken(($bgColor), 15%); 
+		@include box-shadow(0 1px 0 lighten($bgColor, 15%) inset);
+		color: $textColor; 
+
+	    /* Hovers */
+	    &:hover, &:focus { 
+	    	color: $textColor; 
+	    	background-color: darken(($bgColor), 10%); 
+	    	@include box-shadow(0 1px 0 darken($bgColor, 15%) inset);
+	    }
+	}
+}

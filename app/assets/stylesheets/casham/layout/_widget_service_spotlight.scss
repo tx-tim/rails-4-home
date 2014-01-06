@@ -1,0 +1,33 @@
+// ========================
+// service spotlight widget
+// ========================
+
+.side-bar{
+	.service_spotlight{
+		@extend %side-bar-widget;
+		@extend %horizontal-list-widget;
+	}
+}
+
+.main-body{
+	.service_spotlight{
+		@extend %main-body-widget;
+		@extend %horizontal-list-widget;
+		@extend .pr-highlights;  //////////// REFACTOR
+
+		.widget-body{
+			text-align: center;
+		}
+
+		.caption{
+			text-align: center;
+			font-size: .9em;
+			margin-bottom: 0;
+		}
+
+		.service-item a{
+			color: $txtColor;
+		}
+
+	}
+}

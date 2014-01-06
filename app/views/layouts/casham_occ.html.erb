@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+  <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <%= yield :head %>
+
+  <body class="occ">
+    <div class="ca-root"> <!-- root element required for sticky footer -->
+      
+      <%= yield :header %>
+      <%= yield :hero %>
+      
+      <div class="page-container row"> <!-- Main Page Content -->
+      
+        <%= yield :main_content %>
+
+      </div>
+    
+      <div class="ca-root-footer"></div>  <!-- Need this elementfor the sticky footer -->
+    </div>     <!-- End root for sticky footer -->
+
+    <%= yield :footer %>
+
+
+  </body>
+</html>

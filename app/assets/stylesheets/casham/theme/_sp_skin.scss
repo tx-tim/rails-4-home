@@ -1,0 +1,102 @@
+//@import "skin_mixins";
+$footerColor: #121D28;
+$footerAccentColor: #D0103A;
+
+body{
+  background-color: $spSecondaryColor;
+}
+
+.header, .page-hero{
+    background-color: $spPrimaryColor;
+}
+
+
+ul.breadcrumbs{
+  a, span { 
+    color: $spSecondaryColor;
+  }
+}
+
+
+.page-headline{
+  color: $white;
+  font-weight: normal;
+}
+
+
+.side-bar-container{
+  background-color: $white;
+
+  .widget{
+    h3{
+        color: $spAccentColor;
+    } 
+    h4, h5, h6{
+        @extend h3
+    }         
+    p{
+        color: $spBodyTxtColor;
+    } 
+    a{
+        color: $spAccentColor;
+    }
+
+    @include button-color($spAccentColor, $white);
+
+  }
+}
+  
+.main-body{
+    h1{
+        color: $spPrimaryColor;
+    } 
+    h2, h3, h4, h5, h6{
+        @extend h1
+    }         
+    p{
+        color: $spBodyTxtColor;
+    } 
+    a{
+        color: $spPrimaryColor;
+    }
+}
+
+.footer{
+  background-color: tint($footerColor, 5%);
+
+  @include button-color($spAccentColor, $white);
+
+  h1, h2, h3{
+    color:  shade($white, 20%);
+  }
+
+  p, a, label, ul, span{
+    color: shade($spSecondaryColor, 40%);
+  }
+
+  %footer-list{
+    h2{
+      border-bottom: shade($spSecondaryColor, 80%) 1px solid;
+    }
+  }
+
+  ul.link-list{
+    @extend %footer-list;
+  }
+
+  section.brand-list-container{
+    background-color: $footerColor;
+  }
+
+  section.compliance{
+    background-color: $white;
+  }
+
+  form.email-signup{
+    background-color: tint($footerColor, 5%);
+    
+    .panel{
+      background-color: $footerColor;   
+    }
+  }
+}

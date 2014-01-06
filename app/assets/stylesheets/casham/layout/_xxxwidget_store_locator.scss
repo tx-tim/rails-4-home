@@ -1,0 +1,55 @@
+@import "compass";
+
+@import "modular-scale";
+
+@import "foundation/functions/all";
+
+@import "foundation/settings";
+
+@import "foundation/mixins/all";
+//@import "widgets";
+@import "../components/mixins";
+// ========================
+// store locator widget
+// ========================
+/*.side-bar{
+	.store-locator{
+		@extend %side-bar-widget;
+		.icon{
+			position: absolute;
+			top: -8px;
+			font-size: 32px;
+		}
+		.text{
+			padding-left: 2.4em;
+		}
+	}
+}
+
+.main-body{
+	.store-locator{
+		@extend %main-body-widget;
+	}
+}
+
+*/
+
+.side-bar{
+	.store-locator{
+		@include side-bar-widget;
+		.icon{
+			position: absolute;
+			top: -8px;
+			font-size: 32px;
+		}
+		.text{
+			padding-left: 2.4em;
+		}
+	}
+}
+
+.main-body{
+	.store-locator{
+		@include main-body-widget;
+	}
+}

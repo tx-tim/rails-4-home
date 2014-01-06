@@ -1,0 +1,23 @@
+// ========================
+// pr highlights widget
+// ========================
+
+.side-bar{
+	.pr-highlights{
+		@extend %side-bar-widget;
+	}
+	
+}
+
+.main-body{
+	.pr-highlights{
+		@extend %main-body-widget;
+		@extend %vertical-list-widget;
+		.widget-header{
+			text-align: center;
+			color: black;
+			border: 1px solid $secondaryColor;
+			padding: .4em inherit;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+//trying out this BEM syntax
+
+.test-list
+    
+    >ul
+        list-style-position: inside
+        @include no-bullet
+
+
+.test-list__heading
+    color: blue
+    
+    &.h1
+        font-size: ms(3, $base-size)
+
+    &.h2
+        font-size: ms(2, $base-size)
+
+    &.h3
+        font-size: ms(1, $base-size)   
+
+.test-list__p
+    font-size: ms(0)

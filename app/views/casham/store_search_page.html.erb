@@ -1,0 +1,143 @@
+<% provide(:page_title, "Store Search Page") %>
+
+<% content_for :head do %>
+    <%= render "casham/modules/head" %>
+<% end %>
+
+<% content_for :header do %>
+    <%= render "casham/modules/header" %>
+<% end %>
+
+<% content_for :hero do %>
+    <%= render "casham/modules/landing_hero", cols: "twelve", headline_text: "Store Locator" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+
+    <section class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
+        <div class="row advanced-search-criteria">
+            <%# @search_class determines the initial state of advanced search - active will open it %>
+            <div class="widget toggle-widget prog-disclosure row">
+                <div class="prog-disclosure-title text-right">
+                    <h5>Advanced Search </h5>
+                </div>
+
+                <div class="prog-disclosure-content row collapse">
+                    <div class="twelve columns">
+                        <fieldset class="four columns geocriteria">
+                            <legend>Search Within</legend>
+                            
+                            <div class="row collapse short-field"><!-- Custom Selects -->
+                                <div class="five columns">
+                                    <!-- <label for="customDropdown">Miles:</label> -->
+                                    
+                                    <select id="customDropdown">
+                                        <option SELECTED>50</option>
+                                        <option>75</option>
+                                        <option>100</option>
+                                    </select>
+                                </div>
+
+                                <div class="three columns end">
+                                    <label class="inline-label" for="customDropdown">miles of</label>
+                                </div>
+                            </div>
+
+                            <div class="row collapse short-field">
+                                <div class="five columns">
+                                    <input id="anchor-zip" type="text" class="zip-input">
+                                </div>
+                                <div class="three columns end">
+                                    <label class="inline-label" for="customDropdown">zip</label>
+                                </div>
+                            </div>
+
+                            <div class="row collapse horizontal-options-divider">
+                              <div class="one column"><p>or</p></div>
+                            <div class="eleven columns"><hr/></div>  
+                            </div>
+                            
+
+
+                            <label for="anchor-streetAddress">Street Address</label>
+                            <input id="anchor-streetAddress"type="text" class="street-input">
+
+                            <label for="anchor-city">City</label>
+                            <input id="anchor-streetAddress"type="text" class="street-input">
+                        <!-- Custom Selects -->
+                            <div class="row collapse">
+                                <div class="three columns">
+                                    <label>State</label>
+                                    <select id="customDropdown">
+                                        <option SELECTED>State</option>
+                                        <option>Not gonna list</option>
+                                        <option>All the states here</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="five offset-by-two columns service-filter">
+                            <legend>Services</legend>
+                            <!-- Custom Checkbox -->
+                            <div class="">
+                                <% @services.each do |s| %>
+                                    <label for="checkbox1">
+                                        <input type="checkbox" id="checkbox1"><%= s %>
+                                    </label>
+                                <% end %>
+                            </div>
+                        </fieldset> 
+
+                        <fieldset class="five offset-by-two columns service-filter">
+                            <legend>Brands</legend>
+                            <div class="">
+                                <% @brands.each do |b| %>
+                                    <label for="checkbox1"><input type="checkbox" id="checkbox1"><%= b %></label>
+                                <% end %>
+                            </div>
+                        </fieldset> 
+
+                        <div class="twelve columns">
+                            <%= link_to "Search", {:anchor => "results"}, :class => "button radius" %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <article class="row collapse">
+            <a name="results"></a>
+            <div class="store-locator-search-results four columns">
+                <h4 class="">Results</h4>
+                <% for i in 1...7 %>
+                    <div class="result-item">
+                        <ul class="address">
+                            <li class="store"><span><%= i %>. </span> Brand - Store Number</li>
+                            <li class="street">Street Addresss NW 7th</li>
+                            <li class="province">Ft Worth, Tx 75000</li>
+                            <li class="tel">Phone: <a href="tel:408-867-5309">408-867-5309</a></li>
+                            <li class="dir">
+                                <span aria-hidden="true" data-icon="&#xe02f;" class="icon icon-location-17-icon"></span>
+                                <a href="">Get Directions</a>
+                            </li>
+                            <li class="local-page">
+                                <span aria-hidden="true" data-icon="&#xe043;" class="icon icon-globe"></span>
+                                <a href="">View Store's Website</a>
+                            </li>
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+            <div class="results-map eight columns">
+                <%= image_tag "StoreLocatorBingMap.jpg" %>
+            </div>
+        </article>
+    </section><!-- End Main Content -->
+<% end %>
+
+<% content_for :footer do %>
+    <%= render "casham/modules/footer" %>
+<% end %>

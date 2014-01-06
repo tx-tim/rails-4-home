@@ -1,0 +1,67 @@
+<div class="your-store-dropdown">
+    <div class="local-store">
+        <div class="control">
+          <a>
+              <span aria-hidden="true" data-icon="&#xe02b;" class="icon icon-arrow-right control-icon"></span> </a>
+        </div>
+        <address class="store-address full-address">
+            <ul>
+              <li class="small-label">Your Store:</li>
+              <li class="store">Cash America</li>
+              <li class="street">1234 Street Address</li>
+              <li class="province">Farmington, CT 12345</li>
+              <li class="tel">Phone:<a href="tel:408-867-5309">408-867-5309</a> </li>
+            </ul>
+        </address>
+        <div class="divider"></div>
+        <div class="store-hours">
+
+            <span>Store Hours</span>
+            <table>
+                <%# for i in 1...7 %>
+                <% ['Mon', 'Tues', 'Wed','Thurs','Fri','Sat','Sun'].each do |day| %>
+                <tr>
+                    <td class="day">
+                        <%= day %>
+                    </td>
+                    <td class="hours">
+                        88:88am - 88:88pm
+                    </td>
+                </tr>
+                <% end %>
+            </table>
+        </div>
+    </div>
+    <div class="options">
+        <ul>
+            <li><a>Show on Map</a></li>
+            <li><a>View Store's Website</a></li>
+            <li><a>Change Your Store</a></li>
+        </ul>
+    </div>
+    <div class="store-address-list">
+        <% for i in 1...5 %>
+        <address class="store-address">
+            <ul>
+                <li class="store">
+                    <span><%= i %>. </span> Brand - Store Number
+                </li>
+
+                <li class="street">
+                    Street Addresss NW 7th
+                </li>
+
+                <li class="province">
+                    Ft Worth, Tx 75000
+                </li>
+
+                <li class="tel">
+                    Phone:<a href="tel:408-867-5309">408-867-5309</a>
+                </li>
+           </ul>
+        </address>
+        <% end %>
+    </div>
+</div>
+
+

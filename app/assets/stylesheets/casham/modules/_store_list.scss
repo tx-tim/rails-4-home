@@ -1,0 +1,93 @@
+$fullAddressHeight: 65px;
+
+.your-store-dropdown{
+    display: none;
+    position: absolute;
+    width: 200px;
+    min-height: 400px;
+    z-index: 100;
+
+    %dropsection{
+    	padding-left: 1em;
+    	ul{
+    		@include no-bullets;
+    	}
+    }
+
+    .divider{
+    	float: left;
+		border-top: solid 1px darken($topBarDropBgColor, 20%); 
+		@include box-shadow(0 1px 0 rgba(255,255,255,.10) inset); 
+		height: 10px; 
+		padding: 0; 
+		width: 100%;
+    }
+
+    .local-store{
+    	display: block;
+    	vertical-align: middle;
+    	
+    	.control a{
+    		padding: 0;
+    	}
+
+    	.control span{
+    		line-height: $fullAddressHeight;
+    	}
+    	.control{
+    		line-height: $fullAddressHeight;
+    		float: left;
+    		margin-left: 1.5em;
+    	}
+
+    	.store-address{
+    		float: left;
+    		min-height: $fullAddressHeight;
+    		padding-left: 1em;
+    		padding-top: 1em;
+
+    		.label{
+    			line-height: 1.1em;
+    		}
+
+    		.brand, .street{
+    			font-size: 14px;
+    			line-height: 1.2em;
+    		}
+    	}
+    }
+    .store-hours{
+    	@extend %dropsection;
+        @include store-hours;
+    }
+
+    .options{
+    	@extend %dropsection;
+    }
+}
+
+.your-store-dropdown.active{
+    display: block;
+}
+
+//these need to be a mixin or base class to extend
+.store-address-list{
+	padding-left: 1em;
+	ul{
+		@include no-bullets;
+	}
+}
+
+.store-address{
+	.small-label{
+		font-size: 80%;
+	}
+
+	li{
+		line-height: 1.4;
+	}
+
+	.tel>a{
+		padding-left: .25em;
+	}
+}

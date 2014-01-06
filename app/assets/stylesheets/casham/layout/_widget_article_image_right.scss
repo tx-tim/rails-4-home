@@ -1,0 +1,20 @@
+// ========================
+// article image right widget
+// ========================
+
+.side-bar{
+	.article-image-right{
+		@extend %side-bar-widget;
+	}
+}
+
+.main-body{
+	.article-image-right{
+		@extend %main-body-widget;
+		float: right;
+		padding-left: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+

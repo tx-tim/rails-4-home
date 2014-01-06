@@ -1,0 +1,22 @@
+  <% 
+  
+  page_css ||= []
+  css_files = ["Reset", "Layout", "casham", "structure/structure", "skins/ca_skin"].concat(page_css) 
+
+  %>
+
+  <head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    <title><%= :page_title %></title>
+    <!-- Included CSS Files -->
+
+    <%# css_files.each do |f| %>
+        <%#= stylesheet_link_tag f.to_s %>
+    <%# end %>
+    <%= stylesheet_link_tag "casham", media: "all", "data-turbolinks-track" => true %>
+
+    <%#= javascript_include_tag "modernizr.foundation" %>
+    <%#= javascript_include_tag "application" %>
+  </head>

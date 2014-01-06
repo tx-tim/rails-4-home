@@ -1,0 +1,165 @@
+@import"foundation/components/modules/topbar";
+@import"foundation/components/modules/navbar";
+
+$logo-width: 15%;
+$nav-width: 65%;
+$your-store-width: 20%;
+
+.header{
+	position: absolute;
+	width: 100%;
+
+	.header-shade{
+		background-color: white;
+		@include opacity(.2);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.top-bar-container{
+	position: relative;
+}
+
+.top-bar ul > li.toggle-topbar{
+	right: 35px;
+}
+
+.top-bar ul > li.has-dropdown a{
+	padding-right: 45px;
+}
+
+.name{
+	//width: $logo-width;
+}
+
+.navigation{
+	//width: $nav-width;
+}
+
+.your-store{
+	min-width: 200px;
+	padding: 0;
+	margin: 0;
+	border-left: 1px solid #fff;
+
+	.local-store{
+		display: block;
+		vertical-align: middle;
+		
+		.control a{
+			padding: 0;
+		}
+
+		.control span{
+			line-height: $topBarHeight;
+		}
+		.control{
+			line-height: $topBarHeight;
+			float: left;
+			margin-left: 1.5em;
+		}
+		.address{
+			float: left;
+			height: $topBarHeight;
+			padding-left: 1em;
+			padding-top: 1em;
+
+			.label{
+				font-size: 80%;
+				line-height: 1.1em;
+			}
+			.brand, .street{
+				font-size: 14px;
+				line-height: 1.2em;
+			}
+		}
+
+		.full-address{
+			@extend .address;
+			height: auto;
+			float: none;
+		}
+	}
+}
+
+@include respondTo(smallScreen){
+	.header{
+		position: relative;
+		width: 100%;
+
+		.header-shade{
+			background-color: white;
+			@include opacity(.2);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	.top-bar ul > li.toggle-topbar{
+		right: 35px;
+	}
+
+	.top-bar ul > li.has-dropdown a{
+		padding-right: 45px;
+	}
+
+	.name{
+		//width: $logo-width;
+	}
+
+	.navigation{
+		//width: $nav-width;
+	}
+
+	.your-store{
+		//width: $your-store-width;
+		//float: right;
+		min-width: 200px;
+		padding: 0;
+		margin: 0;
+		border-left: 1px solid #fff;
+
+		.local-store{
+			display: block;
+			vertical-align: middle;
+			
+			.control a{
+				padding: 0;
+			}
+
+			.control span{
+				line-height: $topBarHeight;
+			}
+			.control{
+				line-height: $topBarHeight;
+				float: left;
+				margin-left: 1.5em;
+			}
+			.address{
+				float: left;
+				height: $topBarHeight;
+				padding-left: 1em;
+				padding-top: 1em;
+
+				.label{
+					font-size: 80%;
+					line-height: 1.1em;
+				}
+				.brand, .street{
+					font-size: 14px;
+					line-height: 1.2em;
+				}
+			}
+		}
+	}
+}
+
+@import "store_list";
+

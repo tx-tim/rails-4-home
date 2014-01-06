@@ -1,0 +1,83 @@
+.store-locator-page{
+    .store-locator-search-results{
+        max-height: 465px;
+        overflow-y: scroll;
+    }
+
+    .results-map{
+        border: 1px solid $secondaryColor;
+    }
+
+    .horizontal-options-divider{
+        hr{ 
+            margin-top: 12px
+        }
+    }
+    
+    .prog-disclosure{
+        margin: 22px 0 22px 0;
+        @include border-radius(3px, 3px);
+
+        fieldset{
+            border: none;
+            margin-top: 0;
+            margin-bottom: 2em;
+            legend{
+                padding-bottom: 1em;
+            }
+        }
+
+        & > div.prog-disclosure-title { 
+            cursor: pointer; 
+            //background: lighten($secondaryColor, 5%); 
+            padding: 13px; 
+            margin: 0; 
+            position: relative;  
+            //border-#{$defaultFloat}: 1px solid $secondaryColor; 
+            //border-#{$defaultOpposite}: 1px solid $secondaryColor; 
+            @include single-transition(0.15s, background, linear);
+
+              h1, h2, h3, h4, h5 { 
+                margin: 0; 
+                padding-right: 1em;
+              }
+
+              &:after { 
+                @include cssTriangle(6px, darken($secondaryColor, 30%), $defaultOpposite); 
+                position: absolute; 
+                #{$defaultOpposite}: 15px; 
+                top: 17px; 
+              }
+        }
+
+        .prog-disclosure-content { 
+            display: none; 
+            padding: 15px; 
+        }
+
+        .inline-label{
+            padding-top: 12px;
+            padding-left: 12px
+        }
+        
+
+        &.active { 
+            //border-top: 3px solid $mainColor;
+
+          .prog-disclosure-title { 
+            background: $white; 
+            padding-top: 13px;
+
+            &:after { 
+                @include cssTriangle(6px, darken($secondaryColor, 30%), top); 
+            }
+          }
+          .prog-disclosure-content { 
+            background: $white; 
+            display: block; 
+            //border-#{$defaultFloat}: 1px solid $secondaryColor; 
+            //border-#{$defaultOpposite}: 1px solid $secondaryColor; 
+          }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timothyproffitt | Casham </title>
+  <%= stylesheet_link_tag    "casham", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "casham", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="casham">
+
+    <%= yield %>
+
+<div class="container">
+    <%= debug(params) if Rails.env.development? %>
+</div>
+
+</body>
+</html>

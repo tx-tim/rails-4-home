@@ -1,0 +1,81 @@
+
+  .footer{
+    padding-top:  1.4em;
+    position: relative;  
+
+    @include button-structure;
+    .button{
+      font-size: 13px;
+      padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+    }
+
+    .icon{
+      font-size: 36px;
+    }
+
+    %footer-list{
+      h2{
+        font-size: 1em;
+        margin-top: 0;
+        padding-bottom: .4em;
+      }
+      
+      h3{
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: .4em;
+      }
+    }
+
+    ul.link-list{
+      @extend %footer-list;
+      @include no-bullets;
+    }
+
+    section.brand-list-container{
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+    }
+
+    ul.brand-list{
+      //@extend %footer-list;
+      @include inline-list;
+      li{
+        padding-right: 1.4em;
+      }
+    }
+
+    section.compliance{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    ul.compliance-list{
+      @extend %footer-list;
+      @include delimited-list("|");
+    }
+
+
+    .social-links{
+      padding-bottom: 1em;
+      .link-list{
+        @include inline-list;
+      }
+    }
+
+    form.email-signup{      
+      .panel{
+        @include border-radius(5px);
+        padding: 1em;
+        border: none; 
+
+        label{
+          padding-bottom: 1em;
+        }
+      }
+    }
+  }

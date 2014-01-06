@@ -1,0 +1,205 @@
+@import "compass";
+
+@import "modular-scale";
+
+@import "foundation/functions/all";
+
+@import "foundation/settings";
+
+@import "foundation/mixins/all";
+
+// Media Queries Overrides
+//@import "foundation/components/modules/mqueries";
+@import "components/mixins";
+
+
+// ========================
+// abstract widget classes
+// ========================
+
+%widget {
+	p{
+		font-style: normal;
+	}
+	.widget-header{
+		position: relative;
+	}
+
+	.widget-body{
+		padding-bottom: 1em;
+		border-bottom: 1px solid $secondaryColor;
+	}
+
+	@include button-structure;
+	
+	.button{
+		font-size: 13px;
+		padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+	}
+}
+
+%main-body-widget{
+	@extend %widget;
+	h1, h2, h3, h4, h5, h6{
+	  font-size: ms(1);
+	}
+}
+
+%side-bar-widget{
+	@extend %widget;
+}
+
+%vertical-list-widget{
+	.list-widget-item{
+		margin-bottom: 17px;
+	}
+}
+
+%horizontal-list-widget{
+	@include respondTo(smallScreen){
+		.widget-header,
+		.widget-body{
+			text-align: center;
+		}
+	}
+}
+
+@import "widget_article_image_right";
+@import "widget_financial_tools";
+@import "widget_pr_highlights";
+@import "widget_service_spotlight";
+//@import "widget_store_locator";
+
+/*
+// ========================
+// store locator widget
+// ========================
+.side-bar{
+	.store-locator{
+		@extend %side-bar-widget;
+		.icon{
+			position: absolute;
+			top: -8px;
+			font-size: 32px;
+		}
+		.text{
+			padding-left: 2.4em;
+		}
+	}
+}
+
+.main-body{
+	.store-locator{
+		@extend %main-body-widget;
+	}
+}
+
+
+// ========================
+// financial tools widget
+// ========================
+
+.side-bar{
+	.financial-tools{
+		@extend %side-bar-widget;
+		.description{
+			display: none;
+		}
+	}
+}
+
+.main-body{
+	.financial-tools{
+		@extend %main-body-widget;
+		@extend .pr-highlights;           //////////// REFACTOR
+		@include respondTo(smallScreen){
+			.description{
+				display: none;
+			}
+		}
+	}
+}
+
+
+// ========================
+// pr highlights widget
+// ========================
+
+.side-bar{
+	.pr-highlights{
+		@extend %side-bar-widget;
+	}
+	
+}
+
+.main-body{
+	.pr-highlights{
+		@extend %main-body-widget;
+		@extend %vertical-list-widget;
+		.widget-header{
+			text-align: center;
+			color: black;
+			border: 1px solid $secondaryColor;
+			padding: .4em inherit;
+		}
+	}
+}
+
+
+// ========================
+// service spotlight widget
+// ========================
+
+.side-bar{
+	.service_spotlight{
+		@extend %side-bar-widget;
+		@extend %horizontal-list-widget;
+	}
+}
+
+.main-body{
+	.service_spotlight{
+		@extend %main-body-widget;
+		@extend %horizontal-list-widget;
+		@extend .pr-highlights;  //////////// REFACTOR
+
+		.widget-body{
+			text-align: center;
+		}
+
+		.caption{
+			text-align: center;
+			font-size: .9em;
+			margin-bottom: 0;
+		}
+
+		.service-item a{
+			color: $txtColor;
+		}
+
+	}
+}
+
+
+// ========================
+// article image right widget
+// ========================
+
+.side-bar{
+	.article-image-right{
+		@extend %side-bar-widget;
+	}
+}
+
+.main-body{
+	.article-image-right{
+		@extend %main-body-widget;
+		float: right;
+		padding-left: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+//============ END
+
+*/

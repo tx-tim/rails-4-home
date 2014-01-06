@@ -1,0 +1,24 @@
+// ========================
+// financial tools widget
+// ========================
+
+.side-bar{
+	.financial-tools{
+		@extend %side-bar-widget;
+		.description{
+			display: none;
+		}
+	}
+}
+
+.main-body{
+	.financial-tools{
+		@extend %main-body-widget;
+		@extend .pr-highlights;           //////////// REFACTOR
+		@include respondTo(smallScreen){
+			.description{
+				display: none;
+			}
+		}
+	}
+}

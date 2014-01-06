@@ -1,0 +1,127 @@
+//@import "skin_mixins";
+
+body{
+  background-color: $caSecondaryColor;
+}
+
+.semantic-only{
+  display: none;
+}
+
+.header{
+  color: $white;
+  .control-icon{
+    @extend .header;
+  }
+  a{
+    color: $caPrimaryColor;
+  }
+}
+
+
+.your-store-dropdown{
+    background-color: tint($caFooterColor, 5%);
+    a{
+      color: lighten($caFooterColor, 45%);
+    }
+}
+
+
+.page-hero{
+  background-color: $caPrimaryColor;
+  @include background(asset-url("dummy-hero.jpg") no-repeat center center);
+  @include background-size(cover);
+}
+
+.lt-ie9 .page-hero{
+  background-image: none;
+  background-color: $caPrimaryColor;
+}
+
+ul.breadcrumbs{
+  a, span { 
+    color: $caSecondaryColor;
+  }
+}
+
+.page-headline{
+  color: $white;
+  font-weight: normal;
+}
+
+.side-bar{
+  h1, h2, h3{
+      color: $caAccentColor;
+  } 
+  h4, h5{
+      @extend h3
+  }         
+  h6, p{
+      color: $caBodyTxtColor;
+  } 
+  a{
+      color: $caAccentColor;
+  }
+  @include button-color($caAccentColor, $white);
+}
+
+.side-bar-container{
+  background-color: $white;
+}
+  
+.main-body{
+    h1, h2, h3, h4, h5, h6{
+        color: $caPrimaryColor;
+    } 
+       
+    p{
+        color: $caBodyTxtColor;
+    } 
+    a{
+        color: $caPrimaryColor;
+    }
+    .toggle-widget{
+      border: 1px dotted $caPrimaryColor;
+    }
+    
+    @include button-color($caPrimaryColor, $white);
+}
+
+.footer{
+  background-color: tint($caFooterColor, 5%);
+
+  @include button-color($caAccentColor, $white);
+
+  h1, h2, h3{
+    color:  shade($white, 20%);
+  }
+  p, a, label, ul, span{
+    color: shade($caSecondaryColor, 40%);
+  }
+
+  %footer-list{
+    h2{
+      border-bottom: shade($caSecondaryColor, 80%) 1px solid;
+    }
+  }
+
+  ul.link-list{
+    @extend %footer-list;
+  }
+
+  section.brand-list-container{
+    background-color: $caFooterColor;
+  }
+
+  section.compliance{
+    background-color: $white;
+  }
+
+  form.email-signup{
+    background-color: tint($caFooterColor, 5%);
+    
+    .panel{
+      background-color: $caFooterColor;   
+    }
+  }
+}

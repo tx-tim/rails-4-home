@@ -1,0 +1,22 @@
+// ========================
+// store locator widget
+// ========================
+.side-bar{
+	.store-locator{
+		@extend %side-bar-widget;
+		.icon{
+			position: absolute;
+			top: -8px;
+			font-size: 32px;
+		}
+		.text{
+			padding-left: 2.4em;
+		}
+	}
+}
+
+.main-body{
+	.store-locator{
+		@extend %main-body-widget;
+	}
+}
