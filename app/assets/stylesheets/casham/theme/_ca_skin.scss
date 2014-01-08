@@ -29,7 +29,7 @@ body{
 
 .page-hero{
   background-color: $caPrimaryColor;
-  background-image: url(image-path("dummy-hero.jpg"));
+  background-image: url(asset-path("dummy-hero.jpg"));
   background-repeat: no-repeat;
   background-position: center center;
   //@include background(asset-url("dummy-hero.jpg") no-repeat center center);
