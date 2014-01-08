@@ -29,8 +29,8 @@ body{
 
 .page-hero{
   background-color: $caPrimaryColor;
-  background-image: url(image-url("dummy-hero.jpg"))
-  background-repeat: no-repeat
+  background-image: url(image-url("dummy-hero.jpg"));
+  background-repeat: no-repeat;
   //@include background(asset-url("dummy-hero.jpg") no-repeat center center);
   @include background-size(cover);
 }
