@@ -1,1 +1,1 @@
-console.log("casham js test")
+console.log("javascripts/casham test")

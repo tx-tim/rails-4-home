@@ -19,6 +19,10 @@ class CashamController < ApplicationController
         render layout: "casham_occ"
     end
 
+    def style_guide
+        render layout: "casham_layout"
+    end
+
     private
         def set_fixtures
             @services = ["Pawn Loans", "Auto Equity Loan", "Cash Advance", "Preowned Merchandise", "Check Cashing", "Prepaid Debit Cards", "Money Orders", "Insurance", "Gold Purchase", "Money Transfer", "Income Tax" ]

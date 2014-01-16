@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require "./casham/casham-scripts"
+//= require "foundation3/modernizr.foundation.js"
+//= require "foundation3/jquery.foundation.topbar.js"
+//= require "foundation3/app.js"
+
+

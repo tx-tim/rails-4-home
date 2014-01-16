@@ -17,6 +17,7 @@ Timothyproffitt::Application.routes.draw do
   get "casham/template_tcc"
   get "casham/template_occ"
   get "casham/store_search_page"
+  get "casham/style_guide"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
