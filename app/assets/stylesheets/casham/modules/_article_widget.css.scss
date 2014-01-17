@@ -1,0 +1,15 @@
+@import "_module_resources";
+
+// ========================
+// article image right widget
+// ========================
+
+
+.module--article{
+    @extend %module;
+
+    .article-image{
+        padding: $columnGutter/2;
+        float: right;
+    }
+}

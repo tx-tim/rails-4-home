@@ -16,5 +16,7 @@
 //= require "foundation3/modernizr.foundation.js"
 //= require "foundation3/jquery.foundation.topbar.js"
 //= require "foundation3/app.js"
+//= require "polyfills/html5shiv.js"
+//= require "polyfills/test.js"
 
 

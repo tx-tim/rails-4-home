@@ -1,0 +1,43 @@
+// ========================
+// abstract widget classes
+// ========================
+
+%widget {
+    p{
+        font-style: normal;
+        color: red !important;
+    }
+    .widget-header{
+        position: relative;
+    }
+
+    .widget-body{
+        padding-bottom: 1em;
+        border-bottom: 1px solid $secondaryColor;
+    }
+
+    @include button-structure;
+    
+    .button{
+        font-size: 13px;
+        padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+    }
+}
+
+%main-body-widget{
+    @extend %widget;
+    h1, h2, h3, h4, h5, h6{
+      font-size: ms(1);
+    }
+}
+
+%side-bar-widget{
+    @extend %widget;
+}
+
+//======================================================
+
+%module {
+    @include outerRow();
+    padding-top: 1em;
+}
