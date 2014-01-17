@@ -102,12 +102,6 @@ ul.breadcrumbs{
     color: shade($caSecondaryColor, 40%);
   }
 
-  %footer-list{
-    h2{
-      border-bottom: shade($caSecondaryColor, 80%) 1px solid;
-    }
-  }
-
   ul.link-list{
     @extend %footer-list;
   }
@@ -116,7 +110,7 @@ ul.breadcrumbs{
     background-color: $caFooterColor;
   }
 
-  section.compliance{
+  .compliance{
     background-color: $white;
   }
 

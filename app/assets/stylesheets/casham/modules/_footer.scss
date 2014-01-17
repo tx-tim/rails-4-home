@@ -1,81 +1,85 @@
+/*  THESE SHOULD BE PLACED IN COMMON MODULE */
 
-  .footer{
-    padding-top:  1.4em;
-    position: relative;  
+/* 
+	link lists are by default vertical 
+	modifiers are used for horizontal link lists
+*/
 
-    @include button-structure;
-    .button{
-      font-size: 13px;
-      padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
-    }
+.link-list{
+	@include no-bullets;
 
-    .icon{
-      font-size: 36px;
-    }
+	>li > a:hover{
+		color: $caPrimaryColor;
+	}
+}
 
-    %footer-list{
-      h2{
-        font-size: 1em;
-        margin-top: 0;
-        padding-bottom: .4em;
-      }
-      
-      h3{
-        font-size: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: .4em;
-      }
-    }
+.link-list--horizontal{
+	@extend .link-list;
+	@include inline-list;
+}
 
-    ul.link-list{
-      @extend %footer-list;
-      @include no-bullets;
-    }
-
-    section.brand-list-container{
-      padding-top: 1em;
-      padding-bottom: 1em;
-      text-align: center;
-    }
-
-    ul.brand-list{
-      //@extend %footer-list;
-      @include inline-list;
-      li{
-        padding-right: 1.4em;
-      }
-    }
-
-    section.compliance{
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-    }
-
-    ul.compliance-list{
-      @extend %footer-list;
-      @include delimited-list("|");
-    }
+.link-list--delimited{
+	@extend .link-list--horizontal;
+	@include delimited-list("|");
+}
 
 
-    .social-links{
-      padding-bottom: 1em;
-      .link-list{
-        @include inline-list;
-      }
-    }
+.footer{
+	//@include button-structure;
 
-    form.email-signup{      
-      .panel{
-        @include border-radius(5px);
-        padding: 1em;
-        border: none; 
+	padding-top:  2em;
+	position: relative;  
 
-        label{
-          padding-bottom: 1em;
-        }
-      }
-    }
-  }
+	.button{
+		font-size: 13px;
+		//padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+	}
+
+	h2, h3{
+		font-size: 1em;
+	}
+
+	.icon{
+		font-size: 36px;
+	}
+
+	.brand-list-container{
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: center;
+	}
+
+	.brand-list{
+		li{
+			padding-right: 1.4em;
+		}
+	}
+
+	.compliance{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+
+		@include respondTo(smallScreen){
+			position: relative;
+		}
+	}
+
+	.social-links{
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	.email-signup{      
+		.panel{
+			@include border-radius(5px);
+			padding: 1em;
+			border: none; 
+
+			label{
+				padding-bottom: 1em;
+			}
+		}
+	}
+}
