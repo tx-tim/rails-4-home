@@ -15,9 +15,10 @@
 
 <% content_for :main_content do %>
 
-    <section class="eight columns push-four main-body" role="content"> <!-- Main Content -->
+    <div class="eight columns push-four main-body" role="content"> <!-- Main Content -->
         <p>main content</p>
-    </section><!-- End Main Content -->
+
+    </div><!-- End Main Content -->
 
 
 
@@ -26,8 +27,8 @@
         <h2 class="semantic-only">Related Content</h2>
       <div class="side-bar-container">
 
-        <p>sidebar</p>
-        <%#= render "casham/components/widget_store_locator" %>
+
+        <%= render "casham/modules/widget_store_locator" %>
         <%#= render "casham/components/widget_content_article" %>
         <%#= render "casham/components/widget_service_spotlight" %>
         <%#= render "casham/components/widget_store_locator" %>
