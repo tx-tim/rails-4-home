@@ -1,78 +1,137 @@
-<header class="header">
-    <div class="header-shade"></div>
+<div class="header-shade">
+    <div class="header">
+        <div class="header__nav contain-to-grid">
+            <nav class="top-bar" data-options="is_hover:false">
+                <ul>
+                    <li class="name brand-logo"><h1><a href="#">CashAmerica</a></h1></li>
+                    <li class="toggle-topbar"><a href="#"></a></li>
+                </ul>
+                <section>
+                    <ul class="left">
+                        <li class="has-dropdown">
+                            <a href="#">Services</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="#">Pawn Loans</a>
+                                </li>
+                                <li>
+                                    <a href="#">Auto Title Loans</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cash Advances</a>
+                                </li>
+                                <li>
+                                    <a href="#">All Services</a>
+                                </li>
+                            </ul>
+                        </li>
 
-    <div class="row top-bar-container">
-    
-      <nav class="top-bar">
-        <ul>
-          <!-- Title Area -->
-          <li class="name">
-            <h1>
-              <a href="#">
-                <%= image_tag "ca_logo_200w.png", size: "160" %>
-              </a>
-            </h1>
-          </li>
-          <li class="toggle-topbar"><a href="#"></a></li>
-        </ul>
-
-        
-      <section>
-          <!-- Right Nav Section -->
-          <ul class="right">
-          <li class="">
-            <a href="#">Pawn Loans</a>
-          </li>
-          <li>
-            <a href="#">Auto Title</a>
-          </li>
-          <li class="has-dropdown">
-            <a class="active" href="#">Cash Advances</a>
-            <ul class="dropdown"><li class="title back js-generated" style=""><h5><a href="#">Item 1</a></h5></li>
-              <li><label>Section Name</label></li>
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 1</a></li>
-              <li class="divider"></li>
-              <li><label>Section Name</label></li>
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 1</a></li>
-            </ul>
-          </li>
-
-          <li class="has-dropdown">
-            <a class="active" href="#">Retail Services</a>
-            <ul class="dropdown"><li class="title back js-generated" style=""><h5><a href="#">Item 1</a></h5></li>
-              <li><label>Section Name</label></li>
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 1</a></li>
-              <li class="divider"></li>
-              <li><label>Section Name</label></li>
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 1</a></li>
-            </ul>
-          </li>
+                        <li>
+                            <a href="#">Online Catalog</a>
+                        </li>
 
 
-            <li class="your-store">
-                <div class="local-store">
-                  <div class="control">
-                    <a>
-                        <span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2 control-icon"></span> </a>
-                  </div>
-                  <address class="address">
-                    <div class="label">Your Store:</div>
-                    <div class="brand">Cash America</div>
-                    <div class="street">1234 Street Address</div>
-                  </address>
-                </div>
-            </li>
-            
-          </ul>
-        </section>
-      </nav>
+                        <li>
+                            <a href="#">Store Locator</a>
+                        </li>
+                    </ul>
+
+                    <ul class="right header__your-store">
+                        <li class="has-dropdown">
+                            
+                            <div class="your-store">
+                                <div class="your-store__store-address">
+                                    
+                                    <address class="store-address">
+                                        <span class="your-store__label">Your Store</span>
+                                        <div>
+                                            <span class="org">Cash America Pawn - 12345 </span>
+                                        </div>
+                                        <div>
+                                            <span class="street-address">12345 Chestertonfieldville Ave # 1234567 </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality">Chestertonfieldvilledale, EE 6543 </span>
+                                        </div>
+                                    </address>
+                                </div>
+                            </div>
+
+
+                            <ul class="dropdown store-address-list">
+                                <li>
+                                    <address class="store-address">
+                                        <div>
+                                            <span class="org">Cash America Pawn - 12345 </span>
+                                        </div>
+                                        <div>
+                                            <span class="street-address">12345 Chestertonfieldville Ave # 123 </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality">Chestertonfieldvilledale, EE 6543 </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality">Phone </span><span>123-123-1234</span>
+                                        </div>
+                                        <div>
+                                            <span class="locality"><a href="#">Make this my store</a> </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality"><a href="#">Show on map</a> </span>
+                                        </div>
+                                    </address>
+                                </li>
+
+                                <li>
+                                    <address class="store-address">
+                                        <div>
+                                            <span class="org">Cash America Pawn - 12345 </span>
+                                        </div>
+                                        <div>
+                                            <span class="street-address">12345 12 1st St </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality">Azle, EE 6543 </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality">Phone </span><span>123-123-1234</span>
+                                        </div>
+                                        <div>
+                                            <span class="locality"><a href="#">Make this my store</a> </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality"><a href="#">Show on map</a> </span>
+                                        </div>
+                                    </address>
+                                </li>
+
+                                <li>
+                                    <address class="store-address">
+                                        <div>
+                                            <span class="org">Cash America Pawn - 12345 </span>
+                                        </div>
+                                        <div>
+                                            <span class="street-address">12345 Chestertonfieldville Ave # 123 </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality">Chestertonfieldvilledale, EE 6543 </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality">Phone </span><span>123-123-1234</span>
+                                        </div>
+                                        <div>
+                                            <span class="locality"><a href="#">Make this my store</a> </span>
+                                        </div>
+                                        <div>
+                                            <span class="locality"><a href="#">Show on map</a> </span>
+                                        </div>
+                                    </address>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
     </div>
-</header>
-
-
+</div>
