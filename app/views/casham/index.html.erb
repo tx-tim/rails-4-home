@@ -1,21 +1,40 @@
 <div class="CA-redesign-index">
     <div class="row">
         <div class="twelve columns">
-            <h1>Cash America</h1>
+            <h1>Cash America Static Mockups</h1>
         </div>
     </div>
 
     <div class="row">
         <div class="twelve columns vertical-list ">
-            <span class="vertical-list__item"><%= link_to "Style Guide", casham_style_guide_path %></span>
+            <span class="vertical-list__item"><%#= link_to "Style Guide", casham_style_guide_path %></span>
         </div>
     </div>
 
     <div class="row">
-        <h2 class="twelve columns">Layouts</h2>
         <div class="twelve columns">
+            <h2>Layouts</h2>
             <div class="vertical-list">
-                <h3 class="vertical-list__heading h3"> <%=link_to "Two Column Content Template ", casham_template_tcc_path, data: { no_turbolink: true } %> </h3>
+                <ul>
+                    <li class="vertical-list__item">
+                        <%=link_to "Two Column Content Template ", casham_template_tcc_path, data: { no_turbolink: true } %>
+                    </li>
+                    <li class="vertical-list__item">
+                        <%#=link_to "One Column Content Template ", casham_template_tcc_path, data: { no_turbolink: true } %>
+                    </li>
+                    <li class="vertical-list__item"> 
+                        <%= link_to "Store Search Page", casham_store_search_page_path, data: { no_turbolink: true } %> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="twelve columns">
+            <h2>Modules (aka widgets)</h2>
+            <div class="vertical-list">
                 <ul>
                     <li class="vertical-list__item"><%= link_to "Article Module", casham_article_module_path, data: {no_turbolink: true } %></li>
                     <li class="vertical-list__item">Service Template</li>
@@ -25,16 +44,6 @@
         </div>
      </div>
 
-    <div class="row">
-        <div class="twelve columns">
-            <div class="vertical-list">
-                <h3 class="vertical-list__heading h3"> One Column Content Template </h3>
-                <ul>
-                    <li class="vertical-list__item"> <%= link_to "Store Search Page", casham_store_search_page_path, data: { no_turbolink: true }  %> </li>
-                    <li class="vertical-list__item">Home Page</li>
-                </ul>
-            </div>
-        </div>
-    </div> 
+
 </div>
 
