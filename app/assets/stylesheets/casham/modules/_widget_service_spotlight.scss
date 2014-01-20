@@ -1,0 +1,29 @@
+@import "_module_resources";
+
+
+// ========================
+// service spotlight widget
+// ========================
+
+.module--service-spotlight{
+	@extend %module;
+
+	.module-heading{
+		text-align: center;
+	}
+
+	.module-body{
+		text-align: center;
+	}
+
+	.caption{
+		text-align: center;
+		font-size: .9em;
+		//margin-bottom: 0;
+	}
+
+	.module-footer{
+		border-top: 1px solid $separatorColor;
+		padding-top: .4em;
+	}
+}
