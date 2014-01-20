@@ -19,6 +19,7 @@ Timothyproffitt::Application.routes.draw do
   get "casham/style_guide"
   get "casham/template_tcc"
   get "casham/template_occ"
+  get "casham/demo"
   
   
 

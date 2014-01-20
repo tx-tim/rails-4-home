@@ -10,12 +10,6 @@
 @import "modular-scale";
 
 // foundation modules
-//@import "foundation/functions/all"
-//@import "foundation/settings"
-//@import "foundation/mixins/all"
-//@import "foundation/common/base"
-//@import "foundation/components/grid"
-//@import "foundation/components/modules/mqueries"
 @import "foundation";
 
 @include sticky-footer(350px, ".ca-root", ".ca-root-footer", ".footer");

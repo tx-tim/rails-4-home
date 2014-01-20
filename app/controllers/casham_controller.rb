@@ -11,6 +11,10 @@ class CashamController < ApplicationController
         render layout: "casham_tcc"
     end
 
+    def demo
+        render layout: "casham_tcc"
+    end
+
     def template_occ
         render layout: "casham_occ"
     end

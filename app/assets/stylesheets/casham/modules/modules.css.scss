@@ -1,4 +1,4 @@
-// compass modules
+// compass assets
 @import "compass/css3";
 @import "compass/layout/sticky-footer";
 @import "compass/typography/lists";
@@ -7,12 +7,24 @@
 //misc prereqs for foundation
 @import "modular-scale";
 
-// foundation modules
+// foundation assets
 @import "foundation/functions/all";
 @import "foundation/settings";
 @import "foundation/mixins/all";
 
+//custom assets
 @import "../_resources/colors";
 @import "../_resources/mixins";
+@import "../_resources/cafont";
 
-@import "ca_skin";
+
+//@import "header"
+@import "advanced_store_search";
+@import "article_widget";
+@import "breadcrumbs";
+@import "footer";
+@import "debug_dump";
+@import "staging";
+@import "store_locator";
+@import "vertical_list";
+//@import "top_navigation"

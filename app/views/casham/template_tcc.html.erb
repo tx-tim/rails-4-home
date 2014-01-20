@@ -16,19 +16,19 @@
 <% content_for :main_content do %>
 
     <div class="eight columns push-four main-body" role="content"> <!-- Main Content -->
-        <p>main content</p>
+        <%#= render "casham/modules/widget_store_locator" %>
 
     </div><!-- End Main Content -->
 
 
 
         <!-- Sidebar -->
-    <aside class="four columns pull-eight side-bar tcc-page">
+    <aside class="four columns pull-eight side-bar">
         <h2 class="semantic-only">Related Content</h2>
       <div class="side-bar-container">
 
 
-        <%= render "casham/modules/widget_store_locator" %>
+        <%= render "casham/modules/module_store_locator" %>
 
       </div>
     </aside> <!-- End Sidebar -->

@@ -1,7 +1,7 @@
 @import "_module_resources";
 
 // ========================
-// article image right widget
+// article module
 // ========================
 
 
@@ -10,6 +10,7 @@
 
     .article-image{
         padding: $columnGutter/2;
+        max-width: 41.667%;
         float: right;
     }
 }

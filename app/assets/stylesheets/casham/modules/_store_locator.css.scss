@@ -1,0 +1,16 @@
+@import "_module_resources";
+
+// ========================
+// store locator module
+// ========================
+
+.module--store-locator{
+	@extend %module;
+}
+
+
+.side-bar{
+	.module--store-locator{
+		@extend %side-bar__module;
+	}
+}

@@ -38,6 +38,36 @@
 //======================================================
 
 %module {
-    @include outerRow();
+    @include innerRow();
     padding-top: 1em;
+
+    .module-body{
+        //@include innerRow(collapse);
+    }
 }
+
+%side-bar__module{
+    @include innerRow();
+
+    &:first-child{
+        padding-top: 0;
+    }
+
+    padding-top: 1em;
+
+    .module-heading{
+        .icon{
+            position: relative;
+            top: 4px;
+            font-size: 24px;
+        }
+        .module-heading__text{
+            padding-left: .4em;
+        }
+    }
+
+    .module-body{
+        border-bottom: 1px solid $separatorColor;
+    }
+}
+
