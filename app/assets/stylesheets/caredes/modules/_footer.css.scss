@@ -1,7 +1,10 @@
 @import "../resources/custom_settings";
-
+@import "compass";
 .footer{
 
+    h1,h2,h3,h4,h5,h6{
+        font-size: $font-size-base;
+    }
     .email-signup{
         width: 100%;
     }
@@ -10,9 +13,23 @@
         width: 70%;
     }
 
+    .footer-brands-section{
+        background-color: #666;
+    }
+
+    .compliance-list{
+        @include delimited-list("|");
+    }
+
+    .social-media-list{
+        margin-top: $line-height-computed;
+    }
+
+
     @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
         .email-signup{
-            width: 100%;
+            width: 50%;
+            margin-bottom: $line-height-computed/2;
         }
 
         .email-signup-input{
@@ -42,8 +59,6 @@
             margin-bottom: $line-height-computed/2;
         }
     }
-
-
 
 }
 

@@ -1,0 +1,7 @@
+@import "../resources/custom_settings";
+@import "compass";
+
+.btn{
+    @include transition(all .15s ease-in-out);
+    @include border-radius($border-radius-base);
+}

@@ -1,3 +1,110 @@
-h4{
-    color: yellow;
+@import "../resources/custom_settings";
+@import "compass";
+
+
+
+.btn-ca{
+    background-color: $secondary-ca;
+    color: $white;
+
+    &:hover{
+        background-color: darken($secondary-ca, 20%);
+        color: $white;
+    }
+
+    &:focus{
+        background-color: darken($secondary-ca, 15%);
+        color: $white;
+    }
+
+    &:active{
+        background-color: darken($secondary-ca, 15%);
+        color: $white;
+    }
 }
+
+.footer{
+    background-color: tint($footer-bg-ca, 5%);
+    color: $footer-text-ca;
+    a {
+        color: $footer-text-ca;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $light-link-hover;
+            text-decoration: underline;
+        }
+    }
+
+    .footer-brands-section{
+        background-color: $footer-bg-ca;
+    }
+
+    .footer-compliance-section{
+        background-color: $white;
+    }
+
+}
+
+.header{
+    a {
+        color: $light-link-color;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $light-link-hover;
+            text-decoration: underline;
+        }
+    }
+}
+
+.main-body{
+    h1, h2, h3, h4, h5{
+        color: $primary-ca;
+    } 
+}
+.page-hero-section{
+    background-color: $primary-ca;
+    color: $light-link-color;
+    a {
+        color: $light-link-color;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $light-link-hover;
+            text-decoration: underline;
+        }
+    }
+}
+
+.side-bar{
+    background-color: $white;
+    h1, h2, h3, h4, h5{
+        color: $secondary-ca;
+    } 
+        
+    h6, p{
+        color: $body-text;
+    } 
+
+    a {
+      color: $dark-link-color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $dark-link-hover;
+        text-decoration: underline;
+      }
+    }
+
+  //@include button-color($secondary-ca, $white);
+}
+
+
+
+
+

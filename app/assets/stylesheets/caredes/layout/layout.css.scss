@@ -1,3 +1,40 @@
-h2{
-    color: blue;
+@import "../resources/custom_settings";
+@import "compass";
+@import "compass/layout/sticky-footer";
+
+
+@include sticky-footer(280px, ".ca-root", ".ca-root-footer", ".footer");
+
+
+@media (max-width: $screen-md-min) {
+    @include sticky-footer(500px, ".ca-root", ".ca-root-footer", ".footer");
 }
+
+
+.main-body{
+    padding-bottom: $line-height-computed;
+}
+
+.side-bar{
+    @include border-radius($border-radius-base);
+
+    margin-top: -129px;
+    min-height: 500px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        font-size: $font-size-base;
+        margin-top: ($line-height-computed /2);
+        margin-bottom: ($line-height-computed / 2);
+    }
+
+
+    @media (max-width: $screen-sm-min) {
+        margin-top: 0;
+    }
+}
+
