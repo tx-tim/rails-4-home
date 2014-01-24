@@ -44,6 +44,17 @@
     .module-body{
         //@include innerRow(collapse);
     }
+
+    .module-heading{
+        .icon{
+            position: relative;
+            top: 4px;
+            font-size: 125%;
+        }
+        .module-heading__text{
+            padding-left: .4em;
+        }
+    }
 }
 
 %side-bar__module{
@@ -55,19 +66,5 @@
 
     padding-top: 1em;
 
-    .module-heading{
-        .icon{
-            position: relative;
-            top: 4px;
-            font-size: 24px;
-        }
-        .module-heading__text{
-            padding-left: .4em;
-        }
-    }
-
-    .module-body{
-        border-bottom: 1px solid $separatorColor;
-    }
 }
 

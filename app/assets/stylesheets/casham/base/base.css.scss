@@ -12,4 +12,22 @@
 // foundation modules
 @import "foundation";
 
+  .main-body{
+    h1 { font-size: ms(3); }
+    h2 { font-size: ms(2); }
+    h3 { font-size: ms(1); }
+    h4 { font-size: ms(0); }
+    h5 { font-size: ms(0); }
+    h6 { font-size: ms(0); }
+  }
+
+  .sidebar{
+    h1 { font-size: ms(0); }
+    h2 { font-size: ms(0); }
+    h3 { font-size: ms(0); }
+    h4 { font-size: ms(0); }
+    h5 { font-size: ms(0); }
+    h6 { font-size: ms(0); }
+  }
+
 @include sticky-footer(350px, ".ca-root", ".ca-root-footer", ".footer");

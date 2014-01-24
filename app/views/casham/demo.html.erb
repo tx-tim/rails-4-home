@@ -9,7 +9,7 @@
 <% end %>
 
 <% content_for :hero do %>
-    <%= render "casham/modules/landing_hero", cols: "eight", headline_text: "Two Column Content Headline" %>
+    <%= render "casham/modules/landing_hero", cols: "eight", headline_text: "Two Column Page Headline" %>
 <% end %>
 
 
@@ -17,8 +17,9 @@
 
     <div class="eight columns push-four main-body" role="content"> <!-- Main Content -->
 
-        <%= render "casham/modules/widget_service_spotlight" %>
+        
         <%= render "casham/modules/module_article" %>
+        <%= render "casham/modules/module_service_spotlight" %>
         <%= render "casham/modules/module_store_locator" %>
 
     </div><!-- End Main Content -->
@@ -32,7 +33,7 @@
 
 
         <%= render "casham/modules/module_store_locator" %>
-<%= render "casham/modules/widget_service_spotlight" %>
+        <%= render "casham/modules/widget_service_spotlight" %>
 
       </div>
     </aside> <!-- End Sidebar -->

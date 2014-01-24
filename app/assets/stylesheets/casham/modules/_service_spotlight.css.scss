@@ -8,6 +8,12 @@
 .module--service-spotlight{
 	@extend %module;
 
+	.caption{
+		text-align: center;
+		font-size: .9em;
+		//margin-bottom: 0;
+	}
+
 	.module-heading{
 		text-align: center;
 	}
@@ -16,14 +22,18 @@
 		text-align: center;
 	}
 
-	.caption{
-		text-align: center;
-		font-size: .9em;
-		//margin-bottom: 0;
-	}
-
 	.module-footer{
 		border-top: 1px solid $separatorColor;
 		padding-top: .4em;
 	}
+
+	.service-item{
+		padding-top: 12px;
+	}
+
+	.service-spotlight-image{
+		max-width: 85px;
+	}
+
+
 }

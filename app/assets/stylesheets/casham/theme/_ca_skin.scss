@@ -100,11 +100,11 @@ ul.breadcrumbs{
     color: shade($caSecondaryColor, 40%);
   }
 
-  ul.link-list{
-    @extend %footer-list;
+  .footer-top-row{
+    background-color: tint($caFooterColor, 5%);
   }
-
-  section.brand-list-container{
+  
+  .brand-list-container{
     background-color: $caFooterColor;
   }
 
@@ -112,7 +112,7 @@ ul.breadcrumbs{
     background-color: $white;
   }
 
-  form.email-signup{
+  .email-signup{
     background-color: tint($caFooterColor, 5%);
     
     .panel{

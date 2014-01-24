@@ -20,6 +20,7 @@ Timothyproffitt::Application.routes.draw do
   get "casham/template_tcc"
   get "casham/template_occ"
   get "casham/demo"
+  get "casham/services_template"
   
   
 
