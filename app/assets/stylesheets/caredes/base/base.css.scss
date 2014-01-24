@@ -1,0 +1,4 @@
+@import "bootstrap";
+@import "compass/layout/sticky-footer";
+
+@include sticky-footer(350px, ".ca-root", ".ca-root-footer", ".footer");

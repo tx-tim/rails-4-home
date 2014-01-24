@@ -1,0 +1,47 @@
+<% provide(:page_title, "Store Search Page") %>
+
+<% content_for :head do %>
+    <%= render "caredes/modules/head", page_title: "Two Column Template" %>
+<% end %>
+
+<% content_for :header do %>
+    <%= render "caredes/modules/header" %>
+<% end %>
+
+<% content_for :hero do %>
+    <%= render "caredes/modules/hero", cols: "eight", headline_text: "Two Column Page Headline" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+
+    <div class="eight columns push-four main-body" role="content"> <!-- Main Content -->
+        <%#= render "caredes/modules/widget_store_locator" %>
+                    <h1>Test</h1>
+            <h2>Test</h2>
+            <h3>Test</h3>
+            <h4>Test</h4>
+
+    </div><!-- End Main Content -->
+
+
+
+        <!-- Sidebar -->
+    <aside class="four columns pull-eight side-bar">
+        <h2 class="semantic-only">Related Content</h2>
+      <div class="side-bar-container">
+
+
+
+
+      </div>
+    </aside> <!-- End Sidebar -->
+
+
+
+
+<% end %>
+
+<% content_for :footer do %>
+    <%= render "caredes/modules/footer" %>
+<% end %>

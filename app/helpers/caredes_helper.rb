@@ -1,0 +1,2 @@
+module CaredesHelper
+end

@@ -1,4 +1,5 @@
 Timothyproffitt::Application.routes.draw do
+  
   get "casham/one_col"
   root 'static_pages#home'
   resources :sessions, only: [:new, :create, :destroy]
@@ -20,8 +21,11 @@ Timothyproffitt::Application.routes.draw do
   get "casham/template_tcc"
   get "casham/template_occ"
   get "casham/demo"
-  get "casham/services_template"
+  get "cadsham/services_template"
   
+
+  get "caredes/index"
+  get "caredes/caredes_tcc"
   
 
   # The priority is based upon order of creation: first created -> highest priority.

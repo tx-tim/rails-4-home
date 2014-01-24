@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <%= yield :head %>
+
+    <body class="tcc">
+        <div class="ca-root"> <!-- root element required for sticky footer -->
+
+            <%= yield :header %>
+            <%= yield :hero %>
+          
+
+          
+            <%= yield :main_content %>
+
+        
+            <div class="ca-root-footer"></div>  <!-- Need this elementfor the sticky footer -->
+        </div>     <!-- End root for sticky footer -->
+
+    <%= yield :footer %>
+
+  </body>
+</html>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
