@@ -5,7 +5,7 @@
 <% end %>
 
 <% content_for :header do %>
-    <%= render "caredes/modules/header" %>
+    <%#= render "caredes/modules/header" %>
 <% end %>
 
 <% content_for :hero do %>
@@ -14,29 +14,56 @@
 
 
 <% content_for :main_content do %>
-
-    <div class="eight columns push-four main-body" role="content"> <!-- Main Content -->
-        <%#= render "caredes/modules/widget_store_locator" %>
-                    <h1>Test</h1>
-            <h2>Test</h2>
-            <h3>Test</h3>
-            <h4>Test</h4>
-
-    </div><!-- End Main Content -->
-
-
-
-        <!-- Sidebar -->
-    <aside class="four columns pull-eight side-bar">
-        <h2 class="semantic-only">Related Content</h2>
-      <div class="side-bar-container">
+    <div class="page-container container"> <!-- Main Page Content -->
+        <div class="row">
+            <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
+                    <h2>Main body</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <img src="http://placehold.it/250x250" alt="">
+                <%#= render "caredes/modules/widget_store_locator" %>
+            </div><!-- End Main Content -->
 
 
 
+                <!-- Sidebar -->
+            <aside class="side-bar col-sm-4 col-sm-pull-8">
+                <div class="side-bar-inner">
+                    <h2>Sidebar</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
+                    
+                    <a href="#">link to somewhere else</a>
 
-      </div>
-    </aside> <!-- End Sidebar -->
+                    <h3>Sidebar list</h3>
+                    
+                    <ul>
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                    </ul>
 
+                    <dl>
+                        <dt>description term</dt>
+                        <dd>description definition</dd>
+                        <dd>description definition</dd>
+
+                        <dt>description term</dt>
+                        <dd>description definition</dd>
+                        <dd>description definition</dd>
+                    </dl>
+                </div>
+            </aside> <!-- End Sidebar -->
+        </div>
+
+    </div>
 
 
 
