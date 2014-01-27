@@ -32,6 +32,7 @@
         margin-bottom: ($line-height-computed / 2);
     }
 
+    margin-bottom: $line-height-computed;
 
     @media (max-width: $screen-sm-min) {
         margin-top: 0;

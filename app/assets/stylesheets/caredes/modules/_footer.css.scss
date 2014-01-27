@@ -1,5 +1,9 @@
 @import "../resources/custom_settings";
 @import "compass";
+
+@import "social-icons/*.png";
+@include all-social-icons-sprites;
+
 .footer{
 
     h1,h2,h3,h4,h5,h6{
@@ -26,7 +30,14 @@
 
         li{
             padding-left: 0;
+            position: relative;
         } 
+
+        a{
+            display: block;
+            width: 32px;
+            height: 32px;
+        }
 
     }
 
