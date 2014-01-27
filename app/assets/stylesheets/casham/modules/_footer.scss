@@ -42,8 +42,6 @@
 		font-size: 36px;
 	}
 
-
-
 	.brand-list-container{
 		padding-top: 1em;
 		padding-bottom: 1em;
@@ -67,10 +65,6 @@
 		}
 	}
 
-	.social-links{
-		padding-top: 1em;
-	}
-
 	.email-signup{      
 		.panel{
 			@include border-radius(5px);
@@ -80,6 +74,14 @@
 			label{
 				padding-bottom: 1em;
 			}
+		}
+	}
+
+	.social-media-list{
+		padding-top: 1em;
+
+		li{
+			padding-left: 0;
 		}
 	}
 }

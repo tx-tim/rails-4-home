@@ -2,6 +2,9 @@
 @import "compass";
 
 
+body{
+    background-color: $body-bg;
+}
 
 .btn-ca{
     background-color: $secondary-ca;

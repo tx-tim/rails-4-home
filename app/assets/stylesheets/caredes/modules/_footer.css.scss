@@ -23,6 +23,11 @@
 
     .social-media-list{
         margin-top: $line-height-computed;
+
+        li{
+            padding-left: 0;
+        } 
+
     }
 
 
