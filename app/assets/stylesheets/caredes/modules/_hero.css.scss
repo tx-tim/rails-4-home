@@ -1,8 +1,14 @@
 .page-hero-section{
+    background-image: asset-url("hero3.png");
+    background-position: -100 -100;
+    background-size: cover;
     padding-top: 144px;
+
 
     h1{
         font-weight: 500;
     }
+
+
 }
 
