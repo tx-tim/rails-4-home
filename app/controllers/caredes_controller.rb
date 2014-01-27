@@ -1,6 +1,6 @@
 class CaredesController < ApplicationController
 
-    http_basic_authenticate_with name: "cashams", password: "cashams" 
+    http_basic_authenticate_with name: "casham", password: "casham" 
     before_action :set_fixtures
     
     def index
