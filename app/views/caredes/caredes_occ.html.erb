@@ -1,0 +1,30 @@
+<% content_for :head do %>
+    <%= render "caredes/modules/head", page_title: "One Column Layout Template" %>
+<% end %>
+
+<% content_for :header do %>
+    <%#= render "caredes/modules/header" %>
+<% end %>
+
+<% content_for :hero do %>
+    <%= render "caredes/modules/hero", cols: "twelve", headline_text: "One Column Page Headline" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+    <div class="page-container container"> <!-- Main Page Content -->
+        <div class="row">
+            <div class="main-body col-sm-12" role="content"> <!-- Main Content -->
+
+            </div><!-- End Main Content -->
+        </div>
+
+    </div>
+
+
+
+<% end %>
+
+<% content_for :footer do %>
+    <%= render "caredes/modules/footer" %>
+<% end %>

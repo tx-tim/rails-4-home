@@ -26,6 +26,7 @@ Timothyproffitt::Application.routes.draw do
 
   get "caredes/index"
   get "caredes/caredes_tcc"
+  get "caredes/caredes_occ"
   
 
   # The priority is based upon order of creation: first created -> highest priority.
