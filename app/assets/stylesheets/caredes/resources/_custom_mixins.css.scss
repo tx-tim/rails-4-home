@@ -1,0 +1,3 @@
+@mixin remove-padding-on($direction){
+    padding-#{$direction}: 0;
+}

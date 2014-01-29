@@ -2,6 +2,9 @@
 @import "compass";
 @import "compass/layout/sticky-footer";
 
+/* ========================== */
+/* sticky footer */
+/* ========================== */
 
 @include sticky-footer(280px, ".ca-root", ".ca-root-footer", ".footer");
 
@@ -10,6 +13,9 @@
     @include sticky-footer(500px, ".ca-root", ".ca-root-footer", ".footer");
 }
 
+/* ========================== */
+/* page level layout elements */
+/* ========================== */
 
 .main-body{
     padding-bottom: $line-height-computed;
