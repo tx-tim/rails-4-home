@@ -1,129 +1,52 @@
 <% content_for :head do %>
-    <%= render "caredes/modules/head", page_title: "Two Column Template" %>
+    <%= render "caredes/modules/head", page_title: "Home Page" %>
 <% end %>
 
 <% content_for :header do %>
-    <%#= render "caredes/modules/header" %>
+    <%= render "caredes/modules/header" %>
 <% end %>
 
 <% content_for :hero do %>
-    <%= render "caredes/modules/hero", cols: "eight", headline_text: "Templates and Components" %>
+    <%= render "caredes/modules/hero", cols: "twelve", headline_text: "Home Page" %>
 <% end %>
 
 
 <% content_for :main_content do %>
     <div class="page-container container"> <!-- Main Page Content -->
         <div class="row">
-            <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
+            <div class="main-body col-sm-12" role="content"> <!-- Main Content -->
 
-                <h2>h2 Layout Templates</h2>
-                   <ul>
-                       <li>
-                            <%= link_to "Two Column Template", caredes_caredes_tcc_path %>
-                       </li>
-
-                       <li>
-                            <%= link_to "One Column Template", caredes_caredes_occ_path %>
-                       </li>
-                   </ul>
-
-            <!--       <h2>h2 Unordered List</h2>
-                   <ul>
-                       <li>
-                           <%= link_to "Link Text", caredes_caredes_tcc_path %>
-                       </li>
-
-                       <li>
-                           <%= link_to "Link Text", caredes_caredes_occ_path %>
-                       </li>
-
-                       <li>
-                           Plain Text
-                       </li>
-
-                       <li>
-                           Plain Text
-                       </li>
-                   </ul>
-
-                   <h2>h2 Description List</h2>
-                   <dl>
-                       <dt>description term</dt>
-                       <dd>description definition</dd>
-
-                       <dt>description term</dt>
-                       <dd>description definition</dd>
-                       <dd>description definition</dd>
-
-                       <dt>description term</dt>
-                       <dd>description definition</dd>
-                       <dd>description definition</dd>
-                       <dd>description definition</dd>
-                   </dl>
-
-                   <h3>h3 Short Paragraph</h3>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. </p>
-            -->
-            </div><!-- End Main Content -->
-
-
-
-                <!-- Sidebar -->
-            <aside class="side-bar col-sm-4 col-sm-pull-8">
-                <div class="side-bar-inner">
-
-                    <h2>Unordered List</h2>
-                    <ul>
-                        <li>
-                            <%= link_to "Link Text", caredes_caredes_tcc_path %>
-                        </li>
-
-                        <li>
-                            <%= link_to "Link Text", caredes_caredes_occ_path %>
-                        </li>
-
-                        <li>
-                            Plain Text
-                        </li>
-
-                        <li>
-                            Plain Text
-                        </li>
-                    </ul>
-
-                    <h2>Description List</h2>
-                    <dl>
-                        <dt>description term</dt>
-                        <dd>description definition</dd>
-
-                        <dt>description term</dt>
-                        <dd>description definition</dd>
-                        <dd>description definition</dd>
-
-                        <dt>description term</dt>
-                        <dd>description definition</dd>
-                        <dd>description definition</dd>
-                        <dd>description definition</dd>
-                    </dl>
-
-                    <h3>short paragraph</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. </p>
-
-                    <!-- store locator -->
-                    <!-- end widget -->
-
-
+                <div class="row service-spotlight">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail"> <i class="fa fa-lightbulb-o"></i>
+                            <h3 class="title">Pawn Loans</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail"> <i class="fa fa-cogs"></i>
+                            <h3 class="title">Auto Title Loans</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail"> <i class="fa fa-code"></i>
+                            <h3 class="title">Cash Advances</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail"> <i class="fa fa-plane"></i>
+                            <h3 class="title">Retail Services</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        </div>
+                    </div>
                 </div>
-            </aside> <!-- End Sidebar -->
+
+            </div><!-- End Main Content -->
         </div>
+
     </div>
-
-
-
-
-
 
 
 
