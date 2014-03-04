@@ -38,6 +38,18 @@
         margin-bottom: ($line-height-computed / 2);
     }
 
+    .side-bar-inner{
+        margin-top: $line-height-computed;
+    }
+
+    .module{
+        margin-bottom: $line-height-computed;
+    }
+
+    hr:last-child{
+        display: none;
+    }
+    
     margin-bottom: $line-height-computed;
 
     @media (max-width: $screen-sm-min) {

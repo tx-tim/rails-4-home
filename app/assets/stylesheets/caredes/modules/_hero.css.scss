@@ -2,10 +2,12 @@
 /* hero classes */
 /* ========================== */
 
+
 .page-hero-section{
     background-image: asset-url("hero3.png");
     background-size: cover;
     padding-top: 144px;
+    margin-bottom: $line-height-computed;
 
     h1{
         font-weight: 500;

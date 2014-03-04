@@ -7,6 +7,26 @@ class CaredesController < ApplicationController
         render layout: "caredes"
     end
 
+    def test
+        render layout: "caredes"
+    end
+
+    def pawn_loans
+        render layout: "caredes"
+    end
+
+    def auto_loans
+        render layout: "caredes"
+    end
+
+    def cash_advances
+        render layout: "caredes"
+    end
+
+    def faq
+        render layout: "caredes"
+    end
+
     def caredes_tcc
         render layout: "caredes"
     end

@@ -1,0 +1,132 @@
+<% content_for :head do %>
+    <%= render "caredes/modules/head", page_title: "Pawn Loans"%>
+<% end %>
+
+<% content_for :header do %>
+    <%= render "caredes/modules/header" %>
+<% end %>
+
+<% content_for :hero do %>
+    <%= render "caredes/modules/hero", cols: "eight", headline_text: "Pawn Loans" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+    <div class="page-container container"> <!-- Main Page Content -->
+        <div class="row">
+            <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
+                
+                <%= render "caredes/modules/article", title: "What is a Pawn Loan?", article_text: "We use all the research tools we have at our disposal to determine an item’s value and get you the most money we can. This appraisal process for a pawn item varies depending on the type of item—for example, jewelry is evaluated differently than a DVD player—but every appraisal is done with the intent of getting you the money you need.
+                    What It's Worth
+
+                    Authenticating Gold & Diamonds
+                    When jewelry is the collateral for a pawn loan, our professionally trained staff will authenticate the precious metal and diamonds that adorn the piece. We will always ask your permission to test your item before we begin the authentication process that includes a visual inspection using a jeweler’s loupe, weighing the item, sizing (determining carat weight) any diamonds and noting the cut/color/clarity of each—you may know this as the 4 Cs. In addition, we will test the metal using a special acid that determines the karat of gold. This process does not damage your jewelry. It is done to ensure a clean test so there are no false readings on your item that may detract from what we can loan you.
+                    Testing General Merchandise
+                    When it’s general merchandise you want to pawn—TVs, stereos, DVD players, cameras, power tools, firearms, etc.—we will test each item to ensure it is in good working condition. That includes, but is not limited to, a visual inspection, plugging in an item and turning it on, and noting if any accessories are included. The better the condition of your item, the more money we can loan you. This is true for any collateral you bring in to pawn.
+                    New vs. Pre-owned
+                    Our pawn loan values are based on pre-owned retail prices, not what the item cost when it was new. Any collateral that is turned over to us and made available for sale is pre-owned and will be priced accordingly on our sales floor. The pawn loan amount we give you is based on that anticipated selling price. Our internal pricing and research department reviews thousands of items to ensure that our pawn loan values are in line with the general marketplace for pre-owned merchandise.
+                    Overall Condition of the Item
+                    The condition of an item is always taken into account during the appraisal process for a pawn loan. If one 32-inch television comes in that is in perfect condition and one 32-inch television comes in with a chipped screen, we will loan more on the TV that is in better condition. This is true for any collateral.
+
+                    While your item is in pawn, you still own it. Your item is safely stored until you come back to pay your pawn loan in full and claim your merchandise. When you give us an item of collateral for pawn, we keep all accessories (remote controls, cables, etc.) with your item, and place it in our secure facility in an area designated by your pawn loan number. All Cash America shops are fully insured for the total loan value of the collateral we keep.
+
+                    Our coworkers are professionals who are trained in all aspects of the pawn industry, including extensive education on the products we receive and sell. They are required to complete several continuing education courses each year, and attend additional educational courses each quarter as new products/services are implemented in our pawnshops. Cash America coworkers take pride in their work and it shows—from their consistent dress code to the way they greet customers and confidently handle pawn transactions—they are professionals who are ready to help.
+
+                    Our pawnshops are routinely audited by an Internal Audit & Security Department, and work closely with local law enforcement officials." 
+
+                    %>
+
+                    <div class="row easy-steps">
+                        <div class="col-sm-12">
+                            <h2>
+                                Getting a Pawn Loan is Easy
+                            </h2>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="service-right-tabs-wrapper col-sm-12">
+                            <a href="#"></a>
+                            <div class="service-right-tab selected" data-step="step1">
+                                <span>1</span>
+                                <h3>
+                                    Bring Us an Item of Vaue
+                                </h3>
+                            </div><a href="#"></a>
+                            <div class="service-right-tab" data-step="step2">
+                                <span>2</span>
+                                <h3>
+                                    Show Us a Valid Picture ID
+                                </h3>
+                            </div><a href="#"></a>
+                            <div class="service-right-tab" data-step="step3">
+                                <span>3</span>
+                                <h3>
+                                    Get Money in Minutes!
+                                </h3>
+                            </div>
+                            <div id="step1" class="col-sm-12 step-text">
+                                <p>
+                                    We loan on almost anything and stock almost everything, including gold and diamond jewelry, watches, tools, electronics, musical instruments, cameras, game systems, video games, DVDs/CDs, firearms and more*. Simply present your item (collateral) to one of our friendly customer service representatives for a loan appraisal and you'll have a loan appraisal in minutes.
+                                </p>
+                                <p>
+                                    Pawn loans are based on the value of your item—its current value and its current condition. We have an internal pricing department that researches thousands of items so we know what the item’s retail value was when it was new, what it sells for used, and how to determine its condition (good, better, best). At Cash America, you can feel confident that you are getting a fair price for your collateral.
+                                </p>
+                            </div>
+
+                            <div id="step2" class="col-sm-12 step-text">
+                                <p>
+                                    Step 2 Text: We loan on almost anything and stock almost everything, including gold and diamond jewelry, watches, tools, electronics, musical instruments, cameras, game systems, video games, DVDs/CDs, firearms and more*. Simply present your item (collateral) to one of our friendly customer service representatives for a loan appraisal and you'll have a loan appraisal in minutes.
+                                </p>
+                            </div>
+
+                            <div id="step3" class="col-sm-12 step-text">
+                                <p>
+                                    Step 3 Text:  how to determine its condition (good, better, best). At Cash America, you can feel confident that you are getting a fair price for your collateral.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+
+                    <%= render "caredes/modules/service_spotlight" %>
+
+
+            </div><!-- End Main Content -->
+
+
+
+                <!-- Sidebar -->
+            <aside class="side-bar col-sm-4 col-sm-pull-8">
+                <div class="side-bar-inner">
+                
+
+                    <%= render "caredes/modules/store_locator" %>
+                    
+                    
+                    <!-- subnav - refactor -->
+                    <div class="module service-subnav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="active">
+                                <a>Pawn Loans</a>
+                            </li>
+                            <li>
+                                <%= link_to "Frequently Asked Questions", caredes_faq_path %>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+
+                
+                </div>
+            </aside> <!-- End Sidebar -->
+        </div>
+
+    </div>
+
+
+
+<% end %>
+
+<% content_for :footer do %>
+    <%= render "caredes/modules/footer" %>
+<% end %>
