@@ -27,6 +27,10 @@ class CaredesController < ApplicationController
         render layout: "caredes"
     end
 
+    def retail_services
+        render layout: "caredes"
+    end
+
     def caredes_tcc
         render layout: "caredes"
     end

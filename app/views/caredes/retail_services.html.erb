@@ -1,0 +1,114 @@
+<% content_for :head do %>
+    <%= render "caredes/modules/head", page_title: "Retail Services"%>
+<% end %>
+
+<% content_for :header do %>
+    <%= render "caredes/modules/header" %>
+<% end %>
+
+<% content_for :hero do %>
+    <%= render "caredes/modules/hero", cols: "eight", headline_text: "Retail Services" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+    <div class="page-container container"> <!-- Main Page Content -->
+        <div class="row">
+            <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
+                
+                <%= render "caredes/modules/article", title: "Retail Services", article_text: "Along with pawn loans and cash advances, Cash America and its family of brands provide many other financial services, including check cashing, pre-paid products and Western Union® services. Contact the store nearest you to review their full list of financial opportunities." 
+                    %>
+
+                <%= render "caredes/modules/article", title: "Prepaid Visa", article_text: "Enjoy the convenience and freedom associated with having a Visa®, by activating and depositing money onto a prepaid debit card. The NetSpend® Visa®1 works just like cash, but has the convenience of plastic, providing you with the luxury of using it anywhere Visa® is accepted. You can shop or pay your bills online or over the phone, or even load your cash advance proceeds to your card. If cash burns a hole in your pocket, consider activating a prepaid Visa® today!
+
+                    Your initial card is FREE, and you'll enjoy the following benefits:
+                    Easy application process
+                    No credit check or NSF (insufficient fund) fees
+                    Free account alerts so you'll always know your balance
+                    Free virtual accounts for added security when shopping online
+                    Free online account-to-account transfers
+                    Free live customer service
+                    Flexible fee plans
+                    Free direct deposit
+                    Free savings account with interest
+                    Free overdraft buffer up to $10" 
+
+                    %>
+
+                    <%= render "caredes/modules/article", title: "Check Cashing", article_text: "Cash your payroll or government checks in minutes1. We offer competitive rates and can put cash in your pocket today! You can cash your check at almost any Payday Advance or Cashland location.
+ 
+Mr. Payroll check-cashing kiosks, located in convenience stores and gas stations nationwide, also provide fast and convenient check cashing, money orders, bill payment, money transfers and other convenient services at very low rates. Most Mr. Payroll locations are franchise owned and operated, and fees may vary." 
+
+                        %>
+
+                    <%= render "caredes/modules/article", title: "Western Union", article_text: "Through Western Union1, we are now able to provide low-cost money orders, as well as money transfers in most locations." 
+
+                        %>
+
+                    <%= render "caredes/modules/article", title: "Gold Buying", article_text: "You can turn your gold into cash quickly and easily! Bring your gold into one of our neighborhood shops and get cash for your valuables1.
+
+Bring Us Your Gold 
+We buy solid gold coins or jewelry—new, old, even broken—and we pay you cash on the spot. Our highly-trained staff will evaluate your gold to determine karat amount of gold (10k, 14k, 18k, or 24k), perform an etching-acid test to ensure its authenticity, and weigh your merchandise for valuation.
+
+Our gold-buying procedure provides our customers with the convenience that comes from a neighborhood store. Bring in your gold today, and walk out with cash in minutes. It’s that simple!
+
+What We Buy 
+Solid gold items—yellow, white or rose—including:
+Chains  Gold watches    Single earrings
+Class rings Bracelets   Platinum
+Diamonds    Dental crowns   Tangled or broken chains" 
+
+                        %>
+
+                    <%= render "caredes/modules/article", title: "Tax Filing Services", article_text: "File your taxes with us and get the guaranteed lowest price*. Our Payday Advance and Cashland locations can provide you with a free estimate on your return, in as little as 15 minutes with no up-front fee, and help you get your tax refund money fast*. To file your taxes, simply bring in your tax preparation materials, including W-2s and 1099s. Through an online service, we can provide you refund information and options, that may include one or more of the following:
+                    •   IRS e-file — File your taxes and receive your tax refund, generally within 4-6 weeks. Fees will vary.
+•   Check Cashing  — Services are available for an additional fee." 
+
+                        %>
+
+                    <%= render "caredes/modules/article", title: "Insurance", article_text: "Through The General®, you can get quality auto insurance at an affordable price. The General offers low down payments and low monthly payments, immediate coverage, SR22 bonds and full coverage. Call The General® in Ohio at 1-877-831-2700 or Indiana at 1-877-871-9600 for a free quote today." 
+
+                        %>
+
+                <%= render "caredes/modules/service_spotlight" %>
+
+
+            </div><!-- End Main Content -->
+
+
+
+                <!-- Sidebar -->
+            <aside class="side-bar col-sm-4 col-sm-pull-8">
+                <div class="side-bar-inner">
+                
+
+                    <%= render "caredes/modules/store_locator" %>
+                    
+                    
+                    <!-- subnav - refactor -->
+                    <div class="module service-subnav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="active">
+                                <a>Pawn Loans</a>
+                            </li>
+                            <li>
+                                <%= link_to "Frequently Asked Questions", caredes_faq_path %>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+
+                
+                </div>
+            </aside> <!-- End Sidebar -->
+        </div>
+
+    </div>
+
+
+
+<% end %>
+
+<% content_for :footer do %>
+    <%= render "caredes/modules/footer" %>
+<% end %>
