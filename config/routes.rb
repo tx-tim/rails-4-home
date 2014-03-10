@@ -28,6 +28,8 @@ Timothyproffitt::Application.routes.draw do
   get "caredes/test"
   get "caredes/pawn_loans"
   get "caredes/auto_loans"
+  get "caredes/auto_application"
+  get "caredes/auto_application2"
   get "caredes/cash_advances"
   get "caredes/faq"
   get "caredes/retail_services"

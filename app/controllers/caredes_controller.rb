@@ -19,6 +19,14 @@ class CaredesController < ApplicationController
         render layout: "caredes"
     end
 
+    def auto_application
+        render layout: "caredes"
+    end
+
+    def auto_application2
+        render layout: "caredes"
+    end
+
     def cash_advances
         render layout: "caredes"
     end
