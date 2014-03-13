@@ -107,9 +107,10 @@ body{
   //@include button-color($secondary-ca, $white);
 }
 
-.bg-disclaimer{
-    background-color: #fcf6c5;
+.disclaimer{
+    .panel{
+        border: 1px solid $primary-ca;
+    }
 }
-
 
 
