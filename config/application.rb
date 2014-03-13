@@ -32,6 +32,7 @@ module Timothyproffitt
       casham.css
     )
     config.assets.precompile += %w(
+      caredes.js
       caredes.css
     )
   end
