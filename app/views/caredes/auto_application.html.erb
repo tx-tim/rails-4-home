@@ -65,12 +65,11 @@
 						</div>
 						</fieldset>
 
-						<p class="panel disclaimer bg-disclaimer">
-							DISCLAIMERS:
-							* Actual loan terms (including maximum loan amount) vary based on state of residence and amount of vehicle equity. Not all applicants will qualify. Lender requires certain supporting documentation with each application. Lender will base actual loan amount on the equity of the vehicle as stated by most recent copy of the Kelley Blue Book and the lender's underwriting criteria, which could include credit report, credit score, outstanding debt and ability to repay the loan. Kelley Blue Book is a registered trademark of Kelley Blue Book Co. Our Fee Schedule shows fees, loan amounts and other disclosures depending on your state.	
-						</p>
-
 						<%= render "caredes/modules/service_spotlight" %>
+						
+						<%= render "caredes/modules/disclaimer" %>
+
+						
 
 					</div><!-- End Main Content -->
 
@@ -87,10 +86,10 @@
 								<!-- subnav - refactor -->
 								<div class="module service-subnav">
 										<ul class="nav nav-pills nav-stacked">
-												<li class="active">
-														<a>Auto Title Loans</a>
+												<li >
+														<%= link_to "Auto Title Loans", caredes_auto_loans_path %>
 												</li>
-												<li>
+												<li class="active">
 														<a>Apply Online</a>
 												</li>
 												<li>

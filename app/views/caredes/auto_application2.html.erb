@@ -76,12 +76,10 @@
 
 						</div>
 						</fieldset>
-
-						
-
-						<%= render "caredes/modules/disclaimer" %>
 						
 						<%= render "caredes/modules/service_spotlight" %>
+
+						<%= render "caredes/modules/disclaimer" %>
 
 					</div><!-- End Main Content -->
 
@@ -98,10 +96,10 @@
 								<!-- subnav - refactor -->
 								<div class="module service-subnav">
 										<ul class="nav nav-pills nav-stacked">
-												<li class="active">
-														<a>Auto Title Loans</a>
+												<li >
+														<%= link_to "Auto Title Loans", caredes_auto_loans_path %>
 												</li>
-												<li>
+												<li class="active">
 														<a>Apply Online</a>
 												</li>
 												<li>
