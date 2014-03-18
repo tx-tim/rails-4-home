@@ -19,29 +19,37 @@ $footer-text-ca:    #969696;
 // Typography
 // --------------------------------------------------
 
-$font-family-sans-serif:  Verdana, Geneva, sans-serif;
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
 $font-size-base:          14px;
-$font-size-large:         $font-size-base * 1.25; // ~18px
-$font-size-small:         $font-size-base * 0.85; // ~12px
+$font-size-large:         $font-size-base * 1.167; // ~16.338px
+$font-size-small:         $font-size-base * 0.857; // ~12px
 
-$font-size-h1:            $font-size-base * 3; // ~42px
-$font-size-h2:            $font-size-base * 1.7; // ~24px
-$font-size-h3:            $font-size-base * 1.25; // ~18px
-$font-size-h4:            $font-size-base;
-$font-size-h5:            $font-size-base * 0.85; // ~12px
-$font-size-h6:            $font-size-base * 0.85; // ~12px
-
+$standard-interval:       7px;
 //$line-height-base:        1.428571429; // 20/14
-$line-height-base:        1.6; // 22.4/14
-$line-height-computed:    $font-size-base * $line-height-base; // ~22.4px
+$line-height-base:        1.5; // 21/14
+$line-height-computed:    $font-size-base * $line-height-base; // ~21px
+
+$font-size-h1:            44px;
+$line-height-h1:          $font-size-h1 * 1.41; // ~62px
+$font-size-h2:            24px;
+$line-height-h2:          $font-size-h2 * 1.167; // ~28px
+$font-size-h3:            18px;
+$line-height-h3:          $font-size-h3 * 1.167; // ~21px
+$font-size-h4:            $font-size-base;         //14px
+$line-height-h4:          $font-size-h4 * $line-height-base;         //14px
+$font-size-h5:            $font-size-base * 0.857; // ~12px
+$font-size-h6:            $font-size-base * 0.857; // ~12px
+$line-height-small:       $font-size-base;
+
+
 
 $headings-font-family:    Futura, "Trebuchet MS", Arial, sans-serif;
-$headings-font-weight:    600;
-$headings-line-height:    1.2;
+$headings-font-weight:    500;
+$headings-line-height:    1.4;
 $headings-color:          inherit;
 
 

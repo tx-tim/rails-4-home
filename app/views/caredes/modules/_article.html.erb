@@ -2,18 +2,17 @@
 
 <% article_text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta commodi cumque corporis sapiente assumenda facere veritatis qui error dolorum quia deserunt beatae similique incidunt ea modi fuga quae quas sit!" if local_assigns[:article_text].nil? %>
 
-<div class="article">
-    <h2 class="module-title"><%= title %></h2>
-    
-    <div class="row article-detail">
-        <div class="col-md-12">
-
+<div class="row article ca-module">
+    <div class="col-md-12">
+        <h2 class="module-title"><%= title %></h2>
+    </div>
+    <div class="col-md-12 article-detail">
             <div class="aricle-image pull-right">
-                <img class="img-responsive thumbnail" src="http://placehold.it/200x160" alt="...">
+                <img class="img-responsive thumbnail" src="http://placehold.it/200x158" alt="...">
             </div>
 
-            <%= article_text %>
-
-        </div>
+            <p>
+                <%= article_text %>
+            </p>
     </div>
 </div>

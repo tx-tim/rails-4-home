@@ -7,6 +7,7 @@
 @include all-social-icons-sprites;
 
 .footer{
+    padding-top: $line-height-computed;
 
     h1,h2,h3,h4,h5,h6{
         font-size: $font-size-base;
@@ -21,6 +22,11 @@
 
     .footer-brands-section{
         background-color: #666;
+        margin-bottom: $line-height-computed;
+    }
+
+    .footer-brands-list{
+        margin-top: $line-height-computed;
     }
 
     .compliance-list{
@@ -28,8 +34,6 @@
     }
 
     .social-media-list{
-        margin-top: $line-height-computed;
-
         li{
             padding-left: 0;
             position: relative;

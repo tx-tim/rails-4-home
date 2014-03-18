@@ -1,6 +1,10 @@
 .disclaimer{
     .panel{
-        margin-top: $line-height-computed;
-        padding: $line-height-computed/2;
+        //margin-top: $line-height-computed;
+        padding: $line-height-computed/3;
+    }
+
+    p:last-child{
+        margin-bottom: 0;
     }
 }
