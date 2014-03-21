@@ -59,27 +59,28 @@ h1, h2, h3, h4, h5, h6,
     }
 }
 
-h1{
+h1, .h1{
     margin-top: 0;
     line-height: $line-height-h1;
     margin-bottom: $line-height-computed;
 }
 
-h2{
+h2, .h2{
     margin-top: 0;
     line-height: $line-height-h2;
     margin-bottom: $standard-interval * 2;
 }
 
-h3 {
+h3, .h3 {
     margin-top: 0;
     line-height: $line-height-h3;
     margin-bottom: $standard-interval * 2;
 }
-h4,
-h5,
-h6 {
-    margin-bottom: ($line-height-computed / 2);
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    line-height: $line-height-h4;
+    margin-bottom: $standard-interval * 2;
 }
 
 h1, .h1 { font-size: $font-size-h1; }
@@ -95,7 +96,7 @@ h6, .h6 { font-size: $font-size-h6; }
 }
 
 hr{
-    border-color: #ccc;
+    border-color: #ddd;
 }
 
 // Navigations
