@@ -133,9 +133,9 @@ text-align:center;
 
     .step-tab span {
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-        background: none repeat scroll 0 0 $primary-ca;
+        background: none repeat scroll 0 0 #ccc;
         border-radius: 50%;
-        color: #FFFFFF;
+        color: $primary-ca;
         padding: 4px 9px;
     }
 
@@ -148,5 +148,12 @@ text-align:center;
 
     .step-text{
         padding-top: $standard-interval *2;
+    }
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+        .indicator{
+            border-color: transparent;
+            padding-bottom: 21px;
+        }
     }
 }
