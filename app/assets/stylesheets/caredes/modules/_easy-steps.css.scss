@@ -55,31 +55,53 @@ text-align:center;
     .step-tabs-wrapper{
         position: relative;
     }
+    .indicator{
+        border-top: 7px solid #ccc;
+        padding-bottom: 14px;
+    }
     .step-tab{
         text-align:center;  
         background-color: $body-bg;
-        padding: 14px 21px 0;
-        border-top: 7px solid #ccc;
-
-        h3{
-          margin: 0;
-          padding-top: $standard-interval;
-          padding-bottom: $standard-interval;
-          line-height: $line-height-h4;
-          font-weight: lighter;  
-        }
-            
+        padding: 0 21px;
+        //border-top: 7px solid #ccc;
+        min-height: 105px; 
+        cursor: pointer;
     }    
+
+    .step-caption{
+      margin: 0;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      line-height: $line-height-h4;
+      font-weight: lighter;  
+    }
+    
     .step-tab.selected{
         background-color: #E5EEF6;
-        border-color: $secondary-ca;
-        min-height: 105px;
-
-        h3{
-            //color: $white;
-        }
+        border-top: 7px solid;
+        border-top-color: $primary-ca;
+        border-bottom: 1px solid #ccc;
     }
 
+    .step-tab.selected .indicator{
+        border: none;
+    }
+
+    .step-tab.selected:before{
+        content: "";
+        width: 0; 
+        height: 0; 
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid #ccc;
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        left: 50%;
+        margin-left: -6px;
+        top: 100%;
+        z-index: 100
+    }
     .step-tab.selected:after{
         content: "";
         width: 0; 
@@ -90,7 +112,8 @@ text-align:center;
         font-size: 0;
         line-height: 0;
         position: absolute;
-        left: percentage((50 - (10/2)) / 100);
+        left: 50%;
+        margin-left: -5px;
         top: 100%;
         z-index: 100
     }

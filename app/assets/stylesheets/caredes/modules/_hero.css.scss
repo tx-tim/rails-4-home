@@ -7,7 +7,7 @@
     background-image: asset-url("hero3.png");
     background-size: cover;
     padding-top: 175px;
-    margin-bottom: $line-height-computed;
+    margin-bottom: $line-height-computed * 2;
 
     h1{
         font-weight: 500;
