@@ -1,6 +1,6 @@
 
 
-var EasyStepsClass = function($element){
+var EasyStepsClass = function($element, selector){
     var currentTab = 1,
     $el = $element,
     $stepTexts,
@@ -11,10 +11,12 @@ var EasyStepsClass = function($element){
         init: function(){
             var that = this;
             $stepTexts = $el.find(".step-text");
-            $stepTabs = $el.find(".service-right-tab");
+            $stepTabs = $el.find(selector);
 
             this.showSelectedStepText(currentStep);
             this.showSelectedStepTab();
+
+            console.log($stepTexts)
 
         },
 
@@ -56,12 +58,19 @@ var EasyStepsClass = function($element){
 }
 
 $(function(){
-    easySteps = new EasyStepsClass( $(".easy-steps") );
+    easySteps = new EasyStepsClass( $(".easy-steps"), ".service-right-tab" );
     easySteps.init();
 
 
     $(".service-right-tab").on("click", function(e){
         easySteps.setCurrentStep($(e.currentTarget).data('step'));
+    });
+
+    easySteps2 = new EasyStepsClass( $(".easy-steps-2"), ".step-tab" );
+    easySteps2.init();
+
+    $(".step-tab").on("click", function(e){
+        easySteps2.setCurrentStep($(e.currentTarget).data('step'));
     });
 });
 
