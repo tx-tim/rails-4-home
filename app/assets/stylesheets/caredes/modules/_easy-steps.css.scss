@@ -49,3 +49,17 @@
 .tac{
 text-align:center;  
 }
+
+
+.easy-steps-2{
+    .step-tabs-wrapper{
+        position: relative;
+    }
+    .step-tab{
+        background-color: $body-bg;
+    }    
+    .step-tab.selected{
+        background-color: $white;
+    }
+
+}
