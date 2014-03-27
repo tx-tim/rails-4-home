@@ -40,11 +40,11 @@
 .map-container{
     position: relative;
     height: 500px;
-    width: 500px;
+    //width: 500px;
 }
 
 .map {
-    border: 17px solid #FFFFFF;
+    padding: $standard-interval *2;
     margin: 0 0 0 16px;
     width: 95.9%;
 }
