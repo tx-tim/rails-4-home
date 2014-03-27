@@ -11,6 +11,10 @@ class CaredesController < ApplicationController
         render layout: "caredes"
     end
 
+    def advanced_store_search
+        render layout: "caredes"
+    end
+    
     def pawn_loans
         render layout: "caredes"
     end

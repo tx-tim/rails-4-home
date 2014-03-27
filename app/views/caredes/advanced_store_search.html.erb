@@ -1,0 +1,167 @@
+<% content_for :head do %>
+        <%= render "caredes/modules/head", page_title: "Auto Title Loans"%>
+<% end %>
+
+<% content_for :header do %>
+        <%= render "caredes/modules/header" %>
+<% end %>
+
+<% content_for :hero do %>
+        <%= render "caredes/modules/hero", cols: "twelve", headline_text: "Advanced Store Search" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+<div class="page-container container"> <!-- Main Page Content -->
+    <div class="row">
+        <div class="main-body col-sm-12" role="content"> <!-- Main Content -->
+
+
+                <div class="search-criteria-wrapper">
+                    <div class="row">
+                        <!-- === -->
+                        <div class="col-sm-12">
+                            <h2>
+                                Search Criteria
+                            </h2>
+                        </div><!-- === -->
+                        <div class="col-sm-6 search-criteria-left">
+                            <h4>
+                                Search Within
+                            </h4>
+                            <div class="input-group col-sm-6">
+                                <input class="form-control" type="text">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">Miles</button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li>
+                                            <a href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Something else here</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4>
+                                From
+                            </h4><input class="form-control" type="text" placeholder="Zip Code">
+                            <div class="or-divider-wrapper">
+                                or
+                            </div>
+                            <h4>
+                                From
+                            </h4><input class="form-control no-header" type="text" placeholder="Street Address">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input class="form-control no-header" type="text" placeholder="City"> <input class="form-control no-header" type="text" placeholder="State">
+                                </div>
+                            </div>
+                            <a class="btn btn-lg btn-primary" role="button" href="pricing.html">Search</a>
+                        </div><!-- === -->
+                        <div class="col-sm-6 search-criteria-right">
+                            <h4>
+                                Filter Your Results
+                            </h4>
+                            <h5>
+                                Services
+                            </h5>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox1"> Pawn Loans</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox12"> Auto Title Loans</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox13"> Cash Advances</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox14"> Check Cashing</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox15"> Gold Purchasing</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox16"> Money Orders</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox17"> Money Transfer</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox18"> Income Tax</label>
+                                </div>
+                            </div>
+                            <h5>
+                                Services
+                            </h5>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox19"> Pawn Loans</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox110"> Auto Title Loans</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox111"> Cash Advances</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox112"> Check Cashing</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox113"> Gold Purchasing</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox114"> Money Orders</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox115"> Money Transfer</label> <label class="checkbox"><input type="checkbox" value="option1" id="inlineCheckbox116"> Income Tax</label>
+                                </div>
+                            </div>
+                        </div><!-- === -->
+                    </div>
+                </div><!-- ========================= -->
+                <div class="search-results-wrapper">
+                    <div class="row">
+                        <div class="col-sm-4 search-results-left">
+                            <h2>
+                                Search Results
+                            </h2><!-- start -->
+                            <div class="row my-stores selected">
+                                <h3>
+                                    Cash America Pawn - #12345
+                                </h3>
+                                <p>
+                                    12345 Street Address Ave<br>
+                                    Kennybunkportal, ME 12345<br>
+                                    phone: 555-555-55555
+                                </p>
+                                <div class="my-store-links">
+                                    <div id="my-store">
+                                        <a href="#">Make this My Store</a>
+                                    </div>
+                                    <div id="directions">
+                                        <a href="#">Get Directions</a>
+                                    </div>
+                                    <div id="store-website">
+                                        <a href="#">View Store's Website</a>
+                                    </div>
+                                </div>
+                            </div><!-- end --><!-- start -->
+                            <div class="row my-stores last">
+                                <h3>
+                                    Cash America Pawn - #12345
+                                </h3>
+                                <p>
+                                    12345 Street Address Ave<br>
+                                    Kennybunkportal, ME 12345<br>
+                                    phone: 555-555-55555
+                                </p>
+                                <div class="my-store-links">
+                                    <div id="my-store2">
+                                        <a href="#">Make this My Store</a>
+                                    </div>
+                                    <div id="directions2">
+                                        <a href="#">Get Directions</a>
+                                    </div>
+                                    <div id="store-website2">
+                                        <a href="#">View Store's Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- === -->
+                        <div class="col-sm-8">
+                            <div class="map-container">
+                                <div id="add-map-inside-here" class="map">
+                                    <!-- <img id="absolute-positioned-map" src="/Content/images/map.jpg"> -->
+                                    <%= image_tag "StoreLocatorBingMap.jpg" %>
+                                </div>
+                            </div>
+                        </div><!-- === -->
+                    </div>
+                </div><!-- ========================= -->
+
+
+
+        </div>  <!-- end main-body -->
+    </div> <!-- end row -->
+</div>
+
+<% end %>
+
+<% content_for :footer do %>
+        <%= render "caredes/modules/footer" %>
+<% end %>
