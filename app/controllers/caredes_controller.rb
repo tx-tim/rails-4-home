@@ -39,6 +39,10 @@ class CaredesController < ApplicationController
         render layout: "caredes"
     end
 
+    def terms
+        render layout: "caredes"
+    end
+
     def retail_services
         render layout: "caredes"
     end

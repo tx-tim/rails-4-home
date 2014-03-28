@@ -17,7 +17,7 @@ body {
 }
 
 p {
-    margin: 0 0 ($line-height-computed);
+    margin: 0 0 ($line-height-computed * 2);
 }
 
 .lead {
@@ -34,7 +34,7 @@ p {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: $line-height-computed ;
 }
 // Emphasis & misc
 // -------------------------
