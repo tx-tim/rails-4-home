@@ -7,8 +7,7 @@
                         <h2 class="h3">Get Informed</h2>
                         <ul class="list-unstyled">
                             <li>
-                                <%#= link_to "Frequently Asked Questions", caredes_faq_path %>
-                                <a href="#">Frequently Asked Questions</a>
+                                <%= link_to "Frequently Asked Questions", caredes_faq_path %>
                             </li>
 
                             <li>
@@ -20,7 +19,8 @@
                             </li>
                             
                             <li>
-                                <a href="#">Consumer Notices</a>
+                                <%#<a href="#">Consumer Notices</a> %>
+                                <%= link_to "Consumer Notices", caredes_terms_path %>
                             </li>
 
                             <li>
@@ -154,15 +154,15 @@
                         </li>
                         
                         <li>
-                            <a href="#">Terms and Conditions</a>
+                            <%= link_to "Terms and Conditions", caredes_terms_path %>
                         </li>
                         
                         <li>
-                            <a href="#">Privacy Policy</a>
+                            <%= link_to "Privacy Policy", caredes_terms_path %>
                         </li>
                     
                         <li>
-                            <a href="#">Text Message Disclosure</a>
+                            <%= link_to "Text Message Disclosure", caredes_terms_path %>
                         </li>
                     </ul>
                 </div>
