@@ -83,43 +83,39 @@
 
           </div><!-- End Main Content -->
 
-</div><!-- End Main Content -->
+          <!-- Sidebar -->
+          <aside class="side-bar col-sm-4 col-sm-pull-8">
+              <div class="side-bar-inner">
+              
 
+              <%= render "caredes/modules/store_locator" %>
+              
+              
+              <!-- subnav - refactor -->
+              <div class="ca-module service-subnav">
+                  <ul class="nav nav-pills nav-stacked">
+                      <li>
+                          <a>Auto Title Loans</a>
+                      </li>
+                      <li class="active">
+                          <%= link_to "Apply Online", caredes_auto_application_path %>
+                      </li>
+                      <li>
+                          <%= link_to "Frequently Asked Questions", caredes_faq_path %>
+                      </li>
+                      <li>
+                          <a>Rates and Fees</a>
+                      </li>
+                  </ul>
+              </div>
+              <hr>
 
-                <!-- Sidebar -->
-            <aside class="side-bar col-sm-4 col-sm-pull-8">
-                <div class="side-bar-inner">
-                
-                  <%= render "caredes/modules/store_locator" %>
-                    
-                  <!-- subnav - refactor -->
-                  <div class="module service-subnav">
-                      <ul class="nav nav-pills nav-stacked">
-                          <li >
-                              <%= link_to "Auto Title Loans", caredes_auto_loans_path %>
-                          </li>
-                          <li class="active">
-                              <a>Apply Online</a>
-                          </li>
-                          <li>
-                              <%= link_to "Frequently Asked Questions", caredes_faq_path %>
-                          </li>
-                      </ul>
-                  </div>
-                  
-                  <hr>
+              <%= render "caredes/modules/financial_tools" %>
+              
 
-<!-- Sidebar -->
-<aside class="side-bar col-sm-4 col-sm-pull-8">
-    <div class="side-bar-inner">
+              </div>
+          </aside> <!-- End Sidebar -->
 
-
-        <%= render "caredes/modules/store_locator" %>
-
-
-
-    </div>
-</aside> <!-- End Sidebar -->
 </div>
 
 </div>
