@@ -1,16 +1,33 @@
 .financial-tools-icon{
-    max-height: 36px;
-    max-width: 36px;
+
+    img{
+        max-height: 63px;
+        max-width: 63px;
+    }
+
+    @media (max-width: $screen-lg-min) {
+        padding-left: 0;
+    }
+
+    @media (max-width: $screen-md-min) {
+        padding-left: 0;
+
+        img{
+            max-height: 42px;
+            max-width: 42px;
+        }
+    }
+
 }
 
 .financial-tools .col-sm-9 {
     padding-left:0px;
 }
 .financial-tools{
- margin:15px 0 0 0;  
+    //margin: 15px 0 0 0;  
 }
 .financial-tools a{
- color: #D0103A;
+    color: #D0103A;
 }
 .financial-tools .row{
     margin:0 0 $line-height-computed 0;
