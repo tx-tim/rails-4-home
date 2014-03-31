@@ -26,7 +26,7 @@
     @media (max-width: $screen-sm-min) {
         margin-top: 0;
     }
-    margin-top: -156px;
+    margin-top: -98px;
     min-height: 500px;
 
     h1,
@@ -37,21 +37,17 @@
     h6{
         font-size: $font-size-h3;
         line-height: $line-height-h3;
-        margin-bottom: ($line-height-computed / 3) * 2;
+        margin-bottom: $line-height-computed / 3;
     }
 
     .side-bar-inner{
-        padding-top: $line-height-computed;
+        padding-top: ($line-height-computed / 3) * 2;
     }
 
     .ca-module{
         margin-bottom: $line-height-computed;
     }
 
-    hr {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
     hr:last-child{
         display: none;
     }

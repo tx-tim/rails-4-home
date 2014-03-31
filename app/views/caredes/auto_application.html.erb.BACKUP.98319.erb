@@ -1,5 +1,5 @@
 <% content_for :head do %>
-		<%= render "caredes/modules/head", page_title: "Auto Title Loans"%>
+    <%= render "caredes/modules/head", page_title: "Auto Title Loans"%>
 <% end %>
 
 <% content_for :header do %>
@@ -12,6 +12,7 @@
 
 
 <% content_for :main_content do %>
+<<<<<<< HEAD
     <div class="page-container container"> <!-- Main Page Content -->
         <div class="row">
           <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
@@ -97,6 +98,82 @@
                   </div>
                   <hr>
 
+                  <%= render "caredes/modules/financial_tools" %>
+
+                </div>
+            </aside> <!-- End Sidebar -->
+        </div>
+
+    </div>
+=======
+		<div class="page-container container"> <!-- Main Page Content -->
+				<div class="row">
+					<div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
+
+						<fieldset class="">
+							<legend>Step 1 of 2</legend>
+						<div class="form">
+
+<!-- 						<div class="form-inline">
+ -->							<div class="form-group">
+								<label for="vehicle-year">Year</label>
+								<select id="vehicle-year" class="form-control">
+								  <option>2014</option>
+								  <option>2013</option>
+								  <option>2012</option>
+								  <option>2011</option>
+								  <option>2010</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="vehicle-make">Make</label>
+								<select id="vehicle-make" class="form-control">
+								  <option>Audi</option>
+								  <option>Aston Martin</option>
+								  <option>BMW</option>
+								  <option>Chevrolet</option>
+								  <option>Datsun</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="vehicle-model">Model</label>
+								<select id="vehicle-model" class="form-control">
+								  <option>Model1</option>
+								  <option>Model2</option>
+								  <option>Model3</option>
+								  <option>Model4</option>
+								  <option>Model5</option>
+								</select>
+							</div>
+<!-- 						</div>
+
+						<div class="form"> -->
+							<div class="form-group">
+								<label for="vehicle-estimated-mileage">Mileage</label>
+								<input class="form-control" type="text" placeholder="estimated mileage">
+							</div>
+							<!-- <button type="submit" class="btn btn-ca">Next</button> -->
+
+							<%= link_to "Next", caredes_auto_application2_path, class: "btn btn-ca" %>
+
+						</div>
+						</fieldset>
+
+						<%= render "caredes/modules/service_spotlight" %>
+						
+						<%= render "caredes/modules/disclaimer" %>
+
+						
+
+					</div><!-- End Main Content -->
+
+
+
+								<!-- Sidebar -->
+						<aside class="side-bar col-sm-4 col-sm-pull-8">
+								<div class="side-bar-inner">
+								
+
 								<%= render "caredes/modules/store_locator" %>
 								
 								
@@ -119,11 +196,12 @@
 								</div>
 								<hr>
 
-                </div>
-            </aside> <!-- End Sidebar -->
-        </div>
+																</div>
+						</aside> <!-- End Sidebar -->
+				</div>
 
-    </div>
+		</div>
+>>>>>>> prototype
 
 
 

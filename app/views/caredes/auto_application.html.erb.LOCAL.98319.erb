@@ -1,5 +1,5 @@
 <% content_for :head do %>
-		<%= render "caredes/modules/head", page_title: "Auto Title Loans"%>
+    <%= render "caredes/modules/head", page_title: "Auto Title Loans"%>
 <% end %>
 
 <% content_for :header do %>
@@ -97,27 +97,7 @@
                   </div>
                   <hr>
 
-								<%= render "caredes/modules/store_locator" %>
-								
-								
-								<!-- subnav - refactor -->
-								<div class="module service-subnav">
-										<ul class="nav nav-pills nav-stacked">
-												<li >
-														<%= link_to "Auto Title Loans", caredes_auto_loans_path %>
-												</li>
-												<li class="active">
-														<a>Apply Online</a>
-												</li>
-												<li>
-														<%= link_to "Frequently Asked Questions", caredes_faq_path %>
-												</li>
-												<li>
-												    <a>Rates and Fees</a>
-												</li>
-										</ul>
-								</div>
-								<hr>
+                  <%= render "caredes/modules/financial_tools" %>
 
                 </div>
             </aside> <!-- End Sidebar -->

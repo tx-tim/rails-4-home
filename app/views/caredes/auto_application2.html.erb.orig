@@ -1,4 +1,5 @@
 <% content_for :head do %>
+<<<<<<< HEAD
     <%= render "caredes/modules/head", page_title: "Auto Title Loans"%>
 <% end %>
 
@@ -8,17 +9,29 @@
 
 <% content_for :hero do %>
     <%= render "caredes/modules/hero", cols: "eight", headline_text: "Auto Title Loans" %>
+=======
+<%= render "caredes/modules/head", page_title: "Auto Title Loans"%>
+<% end %>
+
+<% content_for :header do %>
+<%= render "caredes/modules/header" %>
+<% end %>
+
+<% content_for :hero do %>
+<%= render "caredes/modules/hero", cols: "eight", headline_text: "Auto Title Loans" %>
+>>>>>>> prototype
 <% end %>
 
 
 <% content_for :main_content do %>
-<div class="page-container container"> <!-- Main Page Content -->
-    <div class="row">
-        <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
+<<<<<<< HEAD
+    <div class="page-container container"> <!-- Main Page Content -->
+        <div class="row">
+          <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
 
             <fieldset class="">
-                <legend>Step 2 of 2</legend>
-                <div class="form">
+              <legend>Step 2 of 2</legend>
+            <div class="form">
 
               <div class="form-horizontal" role="form">
                 <div class="form-group">
@@ -83,7 +96,6 @@
 
           </div><!-- End Main Content -->
 
-</div><!-- End Main Content -->
 
 
                 <!-- Sidebar -->
@@ -109,6 +121,87 @@
                   
                   <hr>
 
+                  <%= render "caredes/modules/financial_tools" %>
+
+                </div>
+            </aside> <!-- End Sidebar -->
+        </div>
+
+    </div>
+=======
+<div class="page-container container"> <!-- Main Page Content -->
+    <div class="row">
+        <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
+
+            <fieldset class="">
+                <legend>Step 2 of 2</legend>
+                <div class="form">
+
+                    <div class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <span class="col-sm-8">Car with Trim1, Transmission1, Drivetrain1</span>
+                        <div class="col-sm-4">
+                          <button class="btn btn-default">This is my car</button>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <span class="col-sm-8">Car with Trim2, Transmission2, Drivetrain2</span>
+                    <div class="col-sm-4">
+                      <button class="btn btn-default">This is my car</button>
+                  </div>
+              </div>
+              <div class="form-group">
+                <span class="col-sm-8">Car with Trim3, Transmission3, Drivetrain3</span>
+                <div class="col-sm-4">
+                  <button class="btn btn-default">This is my car</button>
+              </div>
+          </div>
+      </div>
+
+
+      <legend>How May We Contact You?</legend>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Email
+        </label>
+    </div>
+    <input class="form-control" type="text">
+</div>
+
+<div class="checkbox">
+  <label>
+    <input type="checkbox"> Text Message
+</label>
+</div>
+
+<div class="form-inline" role="form">
+  <div class="form-group">
+    <input type="tel" class="form-control" size="3" id="exampleInputEmail2">
+</div>
+<div class="form-group">
+    <input type="tel" class="form-control" size="3" id="exampleInputPassword2">
+</div>
+<div class="form-group">
+    <input type="tel" class="form-control" size="4" id="exampleInputPassword2">
+</div>
+</div>
+
+<br>                              
+
+<%= link_to "Complete Application", caredes_auto_application2_path, class: "btn btn-ca" %>
+
+</div>
+</fieldset>
+
+<%= render "caredes/modules/service_spotlight" %>
+
+<%= render "caredes/modules/disclaimer" %>
+
+</div><!-- End Main Content -->
+
+
+
 <!-- Sidebar -->
 <aside class="side-bar col-sm-4 col-sm-pull-8">
     <div class="side-bar-inner">
@@ -117,17 +210,40 @@
         <%= render "caredes/modules/store_locator" %>
 
 
+        <!-- subnav - refactor -->
+        <div class="module service-subnav">
+            <ul class="nav nav-pills nav-stacked">
+                <li >
+                    <%= link_to "Auto Title Loans", caredes_auto_loans_path %>
+                </li>
+                <li class="active">
+                    <a>Apply Online</a>
+                </li>
+                <li>
+                    <%= link_to "Frequently Asked Questions", caredes_faq_path %>
+                </li>
+                <li>
+                    <a>Rates and Fees</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
 
     </div>
 </aside> <!-- End Sidebar -->
 </div>
 
 </div>
+>>>>>>> prototype
 
 
 
 <% end %>
 
 <% content_for :footer do %>
+<<<<<<< HEAD
     <%= render "caredes/modules/footer" %>
+=======
+<%= render "caredes/modules/footer" %>
+>>>>>>> prototype
 <% end %>
