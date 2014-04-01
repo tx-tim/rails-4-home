@@ -15,71 +15,57 @@
 <div class="page-container container"> <!-- Main Page Content -->
     <div class="row">
         <div class="main-body col-sm-8 col-sm-push-4" role="content"> <!-- Main Content -->
-
-            <fieldset class="">
-                <legend>Step 2 of 2</legend>
-                <div class="form">
-
-              <div class="form-horizontal" role="form">
-                <div class="form-group">
-                  <span class="col-sm-8">Car with Trim1, Transmission1, Drivetrain1</span>
-                  <div class="col-sm-4">
-                    <button class="btn btn-default">This is my car</button>
+          <div class="panel ca-module auto-form-container">
+              <fieldset class="">
+                  <legend>Step 2 of 2</legend>
+                  <div class="form">
+                      <div class="form-horizontal" role="form">
+                          <div class="form-group">
+                              <span class="col-sm-8">Car with Trim1, Transmission1, Drivetrain1</span>
+                              <div class="col-sm-4">
+                                  <button class="btn btn-default">This is my car</button>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <span class="col-sm-8">Car with Trim2, Transmission2, Drivetrain2</span>
+                              <div class="col-sm-4">
+                                  <button class="btn btn-default">This is my car</button>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <span class="col-sm-8">Car with Trim3, Transmission3, Drivetrain3</span>
+                              <div class="col-sm-4">
+                                  <button class="btn btn-default">This is my car</button>
+                              </div>
+                          </div>
+                      </div><legend>How May We Contact You?</legend>
+                      <div class="form-group">
+                          <div class="checkbox">
+                              <label><input type="checkbox"> Email</label>
+                          </div><input class="form-control" type="text">
+                      </div>
+                      <div class="checkbox">
+                          <label><input type="checkbox"> Text Message</label>
+                      </div>
+                      <div class="form-inline" role="form">
+                          <div class="form-group">
+                              <input type="tel" class="form-control" size="3" id="exampleInputEmail2">
+                          </div>
+                          <div class="form-group">
+                              <input type="tel" class="form-control" size="3" id="exampleInputPassword2">
+                          </div>
+                          <div class="form-group">
+                              <input type="tel" class="form-control" size="4" id="exampleInputPassword22">
+                          </div>
+                      </div><br>
+                      <%= link_to "Complete Application", caredes_auto_application2_path, class: "btn btn-ca" %>
                   </div>
-                </div>
-                <div class="form-group">
-                  <span class="col-sm-8">Car with Trim2, Transmission2, Drivetrain2</span>
-                  <div class="col-sm-4">
-                    <button class="btn btn-default">This is my car</button>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <span class="col-sm-8">Car with Trim3, Transmission3, Drivetrain3</span>
-                  <div class="col-sm-4">
-                    <button class="btn btn-default">This is my car</button>
-                  </div>
-                </div>
-               </div>
-
-
-              <legend>How May We Contact You?</legend>
-              <div class="form-group">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Email
-                  </label>
-                </div>
-                <input class="form-control" type="text">
-              </div>
-
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Text Message
-                </label>
-              </div>
-
-              <div class="form-inline" role="form">
-                <div class="form-group">
-                  <input type="tel" class="form-control" size="3" id="exampleInputEmail2">
-                </div>
-                <div class="form-group">
-                  <input type="tel" class="form-control" size="3" id="exampleInputPassword2">
-                </div>
-                <div class="form-group">
-                  <input type="tel" class="form-control" size="4" id="exampleInputPassword2">
-                </div>
-              </div>
-
-              <br>                
-
-              <%= link_to "Complete Application", caredes_auto_application2_path, class: "btn btn-ca" %>
-
+              </fieldset>
             </div>
-            </fieldset>
-            
-            <%= render "caredes/modules/service_spotlight" %>
 
-            <%= render "caredes/modules/disclaimer" %>
+          <%= render "caredes/modules/service_spotlight" %>
+
+          <%= render "caredes/modules/disclaimer" %>
 
           </div><!-- End Main Content -->
 

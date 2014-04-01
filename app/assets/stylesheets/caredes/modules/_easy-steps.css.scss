@@ -150,7 +150,11 @@ text-align:center;
         padding-top: $standard-interval *2;
     }
 
-    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+    .step-text p:last-child{
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
         .indicator{
             border-color: transparent;
             padding-bottom: 21px;

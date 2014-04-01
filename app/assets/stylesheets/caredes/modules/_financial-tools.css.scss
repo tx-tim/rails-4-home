@@ -5,11 +5,9 @@
         max-width: 63px;
     }
 
-    @media (max-width: $screen-lg-min) {
-        padding-left: 0;
-    }
 
-    @media (max-width: $screen-md-min) {
+
+    @media (min-width: $screen-sm-max) and (max-width: $screen-md-min){
         padding-left: 0;
 
         img{

@@ -1,0 +1,56 @@
+.call-to-action{
+
+    background-color: $sidebar-gray;
+    padding-top: $standard-interval * 2;
+    padding-bottom: $standard-interval * 2;
+
+    .call-to-action-wrapper{
+        background-color: $sidebar-gray;
+        padding-top: $standard-interval * 2;
+        padding-bottom: $standard-interval * 2;
+    }
+    
+    span{
+        display: inline-block;
+        font-weight: 900;
+        margin: 0;
+        padding: $padding-base-vertical;
+        vertical-align: middle;
+    }
+    
+    .text,.cta{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text{
+        width: 60%;
+    }
+
+    .cta{
+        width: 39%;
+    }
+
+    .btn{
+        float: right;
+    }
+
+    
+    @media (max-width: $screen-md-min) {
+        .text, .cta{
+            width: 100%;
+        }
+        .text{
+            margin-bottom: $line-height-computed;
+        }
+        .btn{
+            float: none;
+        }
+    }
+
+    @media (max-width: $screen-sm-min) {
+        .btn{
+            width: 100%;
+        }
+    }
+}

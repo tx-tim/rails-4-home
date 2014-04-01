@@ -60,7 +60,7 @@ Even if you still owe money on your vehicle, we can help you with an Auto Title 
                     %>
 
 
-                    <div class="row easy-steps ca-module">
+<!--                     <div class="row easy-steps ca-module">
                         <div class="col-sm-12">
                             <h2>
                                 Getting an Auto Title Loan is Easy
@@ -104,7 +104,78 @@ Even if you still owe money on your vehicle, we can help you with an Auto Title 
                             </div>
                             <div class="clearfix"></div>
                         </div>
+                    </div> -->
+
+                    <div class="row easy-steps-2 ca-module">
+                      <div class="col-sm-12">
+                        <h2>
+                          Getting an Auto Title Loan is Easy
+                        </h2>
+                      </div>
+
+                      <div class="step-tabs-wrapper col-sm-12">                  
+                        <div class="step-tab col-sm-4 selected" data-step="step1">
+                          <div class="col-sm-12 indicator"></div>
+                          <span>1</span>
+                          <h3 class="h4 step-caption text-center">
+                            Fill out our Prequalification Form
+                          </h3>
+                          <!-- <div class="arrow-down"></div> -->
+                        </div>
+
+
+                        <div class="step-tab col-sm-4" data-step="step2">
+                          <div class="col-sm-12 indicator"></div>
+                          <span>2</span>
+                          <h3 class="h4 step-caption text-center">
+                            Sign over the Title
+                          </h3>
+                        </div>
+
+                        <div class="step-tab col-sm-4" data-step="step3">
+                          <div class="col-sm-12 indicator"></div>
+                            <span>3</span>
+                            <h3 class="h4 step-caption text-center">
+                              Repay your Loan
+                            </h3>
+                          
+                        </div>
+                      </div>
+
+                      <div id="step1" class="col-sm-12 step-text">
+                        <p>
+                            Fill out our  
+                            <%= link_to "prequalification online", caredes_auto_application_path %> 
+                             or in the store.  Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam
+                        </p>
+                      </div>
+                      <div id="step2" class="col-sm-12 step-text">
+                        <p>
+                            Sign over the title of the car to us.  We now own your car but you can still drive it.  Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam
+                        </p>
+                      </div>
+                      <div id="step3" class="col-sm-12 step-text">
+                        <p>
+                            These loans are intended to be short term. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam
+                        </p>
+                      </div>
                     </div>
+
+
+            <!-- begin call to action widget -->
+            
+            <div class="row ca-module call-to-action">
+                <div class="col-sm-12">
+                    <div class=" text">
+                        <span>Fill out our application to get prequalified for an Auto Title Loan!
+                        The button should center vertically according the height of this text.  That said, the content in this area should be extrememly terse.</span>
+                    </div>
+                    <div class=" cta">
+                        <%= link_to "Fill out the Prequalification Form", caredes_auto_application_path, class: "btn btn-primary" %>
+                    </div>
+                </div>
+            </div>
+            <!-- end call to action widget -->
 
 
             <%= render "caredes/modules/service_spotlight" %>
