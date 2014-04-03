@@ -4,9 +4,36 @@
         overflow: hidden;
     }
 
+    .sidebar-link{
+        display: none;
+    }
+
     @media (max-width: $screen-xs-max){
         background-color: $sidebar-gray;
-        padding: $line-height-computed 1em;
+        padding: $line-height-computed ($grid-gutter-width/2);
+    }
+}
+
+
+.side-bar{
+    .promos{
+        //background-color: blue;
+
+        .promos-image-wrapper{
+            display: none;
+        }
+
+        .col-sm-8.sidebar-12{
+            width: 100%;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .sidebar-link{
+            display: inline;
+        }
     }
 }
 
@@ -18,12 +45,32 @@
         overflow: hidden;
         border-left: 15px solid $primary-ca;
         background-color: $sidebar-gray;
-        padding: $line-height-computed 1em;
+        padding: $line-height-computed ($grid-gutter-width/2);
     }
 
 
     @media (max-width: $screen-xs-max){
         background-color: $sidebar-gray;
-        padding: $line-height-computed 1em;
+        padding: $line-height-computed ($grid-gutter-width/2);
     }
 }
+
+
+.side-bar{
+    .promos-light{
+        padding-left: 0;
+        .target{
+            border: none;
+            padding: init;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .sidebar-link{
+            display: inline;
+        }
+    }
+}
+
