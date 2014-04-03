@@ -1,14 +1,19 @@
+<% caption = "Visit the Cash America Pawn store nearest you!" if local_assigns[:caption].nil? %>
+
+<% button_text = "Search for Stores" if local_assigns[:button_text].nil? %>
+
+
 <!-- begin call to action widget -->
 
 <div class="row ca-module call-to-action">
-    <div class="col-sm-12 panel call-to-action-wrapper">
-        <div class=" text">
-            <span>Visit the Cash America Pawn store nearest you!
-            </span>
-        </div>
-        <div class=" cta">
-            <%= link_to "Search for Stores", caredes_advanced_store_search_path, class: "btn btn-primary" %>
+    <div class="col-sm-12">
+        <div class="panel call-to-action-wrapper">
+            <div class=" text">
+                <span><%= caption %></span>
+            </div>
+            <div class=" cta">
+                <%= link_to button_text, caredes_advanced_store_search_path, class: "btn btn-primary" %>
+            </div>
         </div>
     </div>
 </div>
-<!-- end call to action widget -->
