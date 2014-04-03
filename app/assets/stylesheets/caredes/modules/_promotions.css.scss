@@ -1,0 +1,12 @@
+.promos{
+    overflow: hidden;
+    .promos-image-wrapper{
+        overflow: hidden;
+    }
+
+    @media (max-width: $screen-xs-max){
+        background-color: $sidebar-gray;
+        padding: $line-height-computed 1em;
+    }
+}
+
