@@ -10,3 +10,20 @@
     }
 }
 
+
+.promos2{
+    overflow: hidden;
+    padding-left: 15px;
+    .target{
+        overflow: hidden;
+        border-left: 15px solid $primary-ca;
+        background-color: $sidebar-gray;
+        padding: $line-height-computed 1em;
+    }
+
+
+    @media (max-width: $screen-xs-max){
+        background-color: $sidebar-gray;
+        padding: $line-height-computed 1em;
+    }
+}
