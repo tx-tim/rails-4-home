@@ -12,4 +12,6 @@
 //
 //= require bootstrap
 //= require "polyfills/html5shiv.js"
+//= require "imagecover/imagesloaded.min.js"
+//= require "imagecover/jquery.imagecover.js"
 //= require_tree .

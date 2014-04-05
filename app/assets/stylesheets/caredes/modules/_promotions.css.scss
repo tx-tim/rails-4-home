@@ -40,10 +40,13 @@
 
 .promos-light{
     overflow: hidden;
-    padding-left: 15px;
+    padding-left: ($grid-gutter-width/2);
+    .sidebar-link{
+        display: none;
+    }
     .target{
         overflow: hidden;
-        border-left: 15px solid $primary-ca;
+        border-left: ($grid-gutter-width/2) solid $primary-ca;
         background-color: $sidebar-gray;
         padding: $line-height-computed ($grid-gutter-width/2);
     }
@@ -52,6 +55,9 @@
     @media (max-width: $screen-xs-max){
         background-color: $sidebar-gray;
         padding: $line-height-computed ($grid-gutter-width/2);
+        .target{
+            border: none;
+        }
     }
 }
 
@@ -74,3 +80,42 @@
     }
 }
 
+.heavy-promos{
+    overflow: hidden;
+    background-color: $sidebar-gray;
+    .promos-image-wrapper{
+        overflow: hidden;
+    }
+
+    .sidebar-link{
+        display: none;
+    }
+
+    @media (max-width: $screen-xs-max){
+        background-color: $sidebar-gray;
+        padding: $line-height-computed ($grid-gutter-width/2);
+    }
+}
+
+
+.side-bar{
+    .heavy-promos{
+
+        background-color: $sidebar-gray;
+        .promos-image-wrapper{
+            display: none;
+        }
+
+        .col-sm-8.sidebar-12{
+            width: 100%;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .sidebar-link{
+            display: inline;
+        }
+    }
+}
