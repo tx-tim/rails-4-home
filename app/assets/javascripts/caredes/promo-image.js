@@ -2,18 +2,18 @@ console.log("promo image js")
 
 $(function(){
     //$(".heavy-promos .fitimage").imagecover();
-    var calcImageHt = function(){
-        return $(".heavy-promos").height();
-    }
+    // var calcImageHt = function(){
+    //     return $(".j-promo").height();
+    // }
 
-    $(".heavy-promos .promos-image-wrapper").height(calcImageHt);
+    // $(".j-promo .image").height(calcImageHt);
     
-    $(window).resize(function(){
-        calcImageHt = $(".heavy-promos").height();
-        $(".heavy-promos .promos-image-wrapper").height(calcImageHt);
-    })
+    // $(window).resize(function(){
+    //     calcImageHt = $(".j-promo").height();
+    //     //$(".j-promo .image").height(calcImageHt);
+    // })
 
-    $(".heavy-promos .promos-image-wrapper").imagecover();
+    // $(".j-promo .image").imagecover();
 
     //imagecover();
 });

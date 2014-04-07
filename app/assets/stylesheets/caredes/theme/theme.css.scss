@@ -121,4 +121,30 @@ body{
     }
 }
 
+.btn-primary{
+    background-color: $primary-ca;
+    border-color: shade($primary-ca, 10%);
+    color: white;
+}
 
+.btn-primary:hover{
+    background-color: shade($primary-ca, 25%);
+    border-color: shade($primary-ca, 30%);
+    color: white;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border-color: $primary-ca;
+    color: $primary-ca;
+}
+
+.btn-secondary:hover{
+    background-color: $primary-ca;
+    border-color: $primary-ca;
+    color: white;
+}
+
+//color: white;
+//background-color: #428bca;
+//border-color: #357ebd;

@@ -119,3 +119,59 @@
         }
     }
 }
+
+.j-promo{
+
+    overflow: hidden;
+    padding-left: ($grid-gutter-width/2);
+
+    .sidebar-link{
+        display: none;
+    }
+    .wrapper{
+        border-top: 1px solid shade($body-bg, 8.5%);
+        border-bottom: 1px solid shade($body-bg, 8.5%);
+        overflow: hidden;
+        padding: $line-height-computed ($grid-gutter-width/2);
+    }
+
+
+    @media (max-width: $screen-xs-max){
+        background-color: $sidebar-gray;
+        padding: $line-height-computed ($grid-gutter-width/2);
+        .image{
+            display: none;
+        }
+        .wrapper{
+            border: none;
+        }
+    }
+}
+
+
+.side-bar{
+    .j-promo{
+        padding-left: 0;
+        .wrapper{
+            border: none;
+            padding: init;
+        }
+        
+        .text{
+            width: 100%;
+        }
+
+        .image{
+            display: none;
+        }
+
+        .btn{
+            display: none;
+        }
+
+        .sidebar-link{
+            display: inline;
+        }
+    }
+}
+
