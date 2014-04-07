@@ -16,7 +16,7 @@ var EasyStepsClass = function($element, selector){
             this.showSelectedStepText(currentStep);
             this.showSelectedStepTab();
 
-            console.log($stepTexts)
+            //console.log($stepTexts)
 
         },
 
