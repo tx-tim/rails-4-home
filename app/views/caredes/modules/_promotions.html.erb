@@ -1,3 +1,8 @@
+<% title = "Save More at Cash America" if local_assigns[:title].nil? %>
+
+<% cta = "Call to Action" if local_assigns[:cta].nil? %>
+<% image = "ipad.png" if local_assigns[:image].nil? %>
+
 <!-- begin promo -->
 
 <div class="row ca-module j-promo">
@@ -5,19 +10,19 @@
         <div class="row">
             <div class="col-sm-6 text">
                 <h2>
-                  Save More Today
+                    <%= title %>
                 </h2>
                 <p>
                     Promo Text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, fuga, error commodi nostrum qui perspiciatis voluptate quidem sit iste minima veritatis ducimus. Accusantium, illum, fugit velit nam ab ad saepe.
                 </p>
 
-                <%= link_to "Save Even More for Dad", "http://www.google.com", class: "btn btn-secondary" %>
+                <%= link_to cta, "http://stores.ebay.com/cashamericainternetsales", class: "btn btn-secondary" %>
 
-                <%= link_to "Save Even More for Dad", "http://stores.ebay.com/cashamericainternetsales", class: "sidebar-link" %>
+                <%= link_to cta, "http://stores.ebay.com/cashamericainternetsales", class: "sidebar-link" %>
             </div>
 
             <div class="col-sm-6 image">
-                <%= image_tag "hammer.png", class: "img-responsive" %>
+                <%= image_tag image, class: "img-responsive" %>
             </div>
         </div>
     </div>
