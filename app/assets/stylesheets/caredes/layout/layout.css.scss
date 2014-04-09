@@ -24,7 +24,8 @@
 .side-bar{
     @include border-radius($border-radius-base);
     @media (max-width: $screen-sm-min) {
-        margin-top: 0;
+        //margin-top: 0;
+        display: none;
     }
     margin-top: -150px;
     min-height: 500px;

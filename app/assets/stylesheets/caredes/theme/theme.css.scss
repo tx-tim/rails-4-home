@@ -148,3 +148,8 @@ body{
 //color: white;
 //background-color: #428bca;
 //border-color: #357ebd;
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: $primary-ca;
+  background-color: $selected-ca;
+}

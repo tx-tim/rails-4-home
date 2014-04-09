@@ -3,7 +3,7 @@
 $black:             #111111;
 $white:             #fefefe;
 $body-bg:           #fafafa;
-$sidebar-gray:      shade($body-bg, 5%);
+$sidebar-gray:      shade($body-bg, 2%);
 $body-text:         #252525;
 $light-link-color:  $white;
 $light-link-hover:  #ccc;
@@ -13,6 +13,7 @@ $dark-link-hover:   #005daa;
 
 $primary-ca:        #005daa;
 $secondary-ca:      #D0103A;
+$selected-ca:       #e0e9f1;
 
 $footer-bg-ca:      #121D28;
 $footer-text-ca:    #969696;

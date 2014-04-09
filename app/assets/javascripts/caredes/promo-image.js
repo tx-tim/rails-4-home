@@ -1,6 +1,6 @@
 console.log("promo image js")
 
-$(function(){
+//$(function(){
     //$(".heavy-promos .fitimage").imagecover();
     // var calcImageHt = function(){
     //     return $(".j-promo").height();
@@ -16,4 +16,4 @@ $(function(){
     // $(".j-promo .image").imagecover();
 
     //imagecover();
-});
+//});
