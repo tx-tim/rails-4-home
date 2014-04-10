@@ -48,7 +48,7 @@
     }
 
 
-    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
         .email-signup{
             width: 50%;
             margin-bottom: $line-height-computed/2;
@@ -60,7 +60,7 @@
         }
     }
 
-    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
         .email-signup{
             width: 100%;
         }
@@ -71,9 +71,13 @@
         }
     }
 
-    @media (max-width: $screen-xs-min){
+    @media (max-width: $screen-xs){
         .email-signup{
             width: 100%;
+
+            .btn{
+                width: 100%;
+            }
         }
 
         .email-signup-input{

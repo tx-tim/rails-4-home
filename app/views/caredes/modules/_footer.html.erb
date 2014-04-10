@@ -19,7 +19,6 @@
                             </li>
                             
                             <li>
-                                <%#<a href="#">Consumer Notices</a> %>
                                 <%= link_to "Consumer Notices", caredes_terms_path %>
                             </li>
 
@@ -87,7 +86,9 @@
 
                                 <input id="email-signup-input" type="email" class="form-control input-sm email-signup-input" placeholder="Email Address"/>
 
-                                <button type="submit" class="btn btn-ca btn-sm">Sign Up</button>
+                                <!-- <a id="email-signup-submit" href="#" type="submit" class="btn btn-ca btn-sm">Sign Up</a> -->
+                                <%= link_to "Sign Up", "http://www.inboxgroup.com/cashamerica/?source=homepage", class: "btn btn-ca btn-sm", id: "email-signup-submit", type: 'submit' %>
+
                             </div>
                         </div>
                     </div>
@@ -170,5 +171,6 @@
         </div>
     </div>
 
+    <%= render "caredes/modules/offcanvas" %>
 
 </footer>

@@ -1,3 +1,24 @@
 @mixin remove-padding-on($direction){
     padding-#{$direction}: 0;
 }
+
+@mixin btn-ca($bg-color, $text-color){
+    background-color: $secondary-ca;
+    color: $text-color;
+
+    &:hover{
+        background-color: darken($bg-color, 20%);
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    &:focus{
+        background-color: darken($bg-color, 15%);
+        color: $text-color;
+    }
+
+    &:active{
+        background-color: darken($bg-color, 15%);
+        color: $text-color;
+    }
+}

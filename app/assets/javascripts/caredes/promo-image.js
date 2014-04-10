@@ -1,4 +1,4 @@
-console.log("promo image js")
+//console.log("promo image js")
 
 //$(function(){
     //$(".heavy-promos .fitimage").imagecover();
