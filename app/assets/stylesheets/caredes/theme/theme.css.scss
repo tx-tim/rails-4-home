@@ -57,6 +57,7 @@ body{
         color: $primary-ca;
     } 
 }
+
 .page-hero-section{
     background-color: $primary-ca;
     color: $light-link-color;
@@ -139,4 +140,10 @@ body{
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   color: $primary-ca;
   background-color: $selected-ca;
+}
+
+.offcanvas-email-form{
+  .h2{
+    color: $primary-ca;
+  }
 }

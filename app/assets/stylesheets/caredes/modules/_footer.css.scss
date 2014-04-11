@@ -55,8 +55,9 @@
         }
 
         .email-signup-input{
-            width: 100%;
-            margin-bottom: $line-height-computed/2;
+            display:none
+            //width: 100%;
+            //margin-bottom: $line-height-computed/2;
         }
     }
 
@@ -66,8 +67,9 @@
         }
 
         .email-signup-input{
-            width: 50%;
-            margin-bottom: $line-height-computed/2;
+            display: none;
+            //width: 50%;
+            //margin-bottom: $line-height-computed/2;
         }
     }
 
@@ -76,13 +78,14 @@
             width: 100%;
 
             .btn{
-                width: 100%;
+                width: 50%;
             }
         }
 
         .email-signup-input{
-            width: 100%;
-            margin-bottom: $line-height-computed/2;
+            display: none;
+            //width: 100%;
+            //margin-bottom: $line-height-computed/2;
         }
     }
 

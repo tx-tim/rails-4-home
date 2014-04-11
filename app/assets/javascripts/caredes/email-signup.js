@@ -7,10 +7,10 @@ $(function(){
         $('#email-signup-submit').click(function(){
             console.log(Modernizr.mq('(min-width: 991px)') )
 
-            if( Modernizr.mq('(min-width: 991px)') ){
+            if( Modernizr.mq('(min-width: 991px)' ) ){
                 console.log("drop a modal");
                 $('.offcanvas-email-form').modal();
-
+                return false; 
             }
             else{
                 console.log("try a slide thing");
@@ -20,15 +20,14 @@ $(function(){
                 // .detach()
                 // .appendTo('.email-signup')
                 // .show();
-                $('.offcanvas-email-form .modal-content')
-                .detach()
-                .prependTo('.footer-brands-section')
-                .show();
-                
+                //$('.offcanvas-email-form .modal-content')
+                //.detach()
+                //.prependTo('.footer-brands-section')
+                //.show();
             }
 
 
-           return false; 
+           
         });
     }
 });

@@ -20,6 +20,10 @@ footer {
 
 .offcanvas-email-form{
   display:none;
+
+  .h2{
+    font-size: $font-size-h2;
+  }
 }
 
 @media screen and (max-width: 767px) {
