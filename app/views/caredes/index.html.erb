@@ -36,30 +36,41 @@
     </div>
 </div>
 
-<div class="color-section callout">
+<div class="color-section callout ca-module bg-image-wrapper">
+    <%= image_tag "home/deal-bw.png" %>
     <div class="container">
-        <h2 class="text-center">
-            Turn Your Items into Cash in Three Easy Steps
-        </h2>
-
-        <div class="text-center">        
-            <ul class="list-inline">
-                <li>Step 1</li>
-                <li>Step 2</li>
-                <li>Step 3</li>
-            </ul>
+        <div class="color-bg row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="circle">1</div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="circle">2</div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="circle">3</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center col-sm-8 col-sm-offset-2 h1 color-ie8">
+                Turn Your Items into Cash in Three Easy Steps
+            </h2>
         </div>
-
     </div>
+
 </div>
 
 <div class="color-section">
     <div class="container">
+
+
+        <%= render "caredes/modules/home_steps" %>
+
         <%= render "caredes/modules/promotions", title: "Save More Money", cta: "Save More for Dad", image: "hammer.png" %>
 
 
         <%= render "caredes/modules/promotions", title: "Save More Money", cta: "Save More for Dad", image: "hammer.png" %>
-
     </div>
 </div>
 
