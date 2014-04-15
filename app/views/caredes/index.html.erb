@@ -7,48 +7,61 @@
 <% end %>
 
 <% content_for :hero do %>
-    <%= render "caredes/modules/hero", cols: "twelve", headline_text: "Home Page" %>
+    <%= render "caredes/modules/home_hero" %>
 <% end %>
 
 
 <% content_for :main_content do %>
-    <div class="page-container container"> <!-- Main Page Content -->
+<!--     <div class="page-container container"> <!-- Main Page Content 
         <div class="row">
-            <div class="main-body col-sm-12" role="content"> <!-- Main Content -->
-                <%= render "caredes/modules/service_spotlight" %>
-                <!-- <div class="row service-spotlight">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="thumbnail"> <i class="fa fa-lightbulb-o"></i>
-                            <h3 class="title">Pawn Loans</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="thumbnail"> <i class="fa fa-cogs"></i>
-                            <h3 class="title">Auto Title Loans</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="thumbnail"> <i class="fa fa-code"></i>
-                            <h3 class="title">Cash Advances</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="thumbnail"> <i class="fa fa-plane"></i>
-                            <h3 class="title">Retail Services</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                        </div>
-                    </div>
-                </div> -->
+            <div class="main-body col-sm-12" role="content"> <!-- Main Content 
 
-            </div><!-- End Main Content -->
+
+                <%= render "caredes/modules/service_spotlight" %>
+                
+
+            </div><!-- End Main Content
+        </div>
+
+    </div> -->
+
+<div class="color-section">
+    <div class="container">
+        <%= render "caredes/modules/promotions", title: "Save More Money", cta: "Save More for Dad", image: "hammer.png" %>
+
+
+        <%= render "caredes/modules/promotions", title: "Save More Money", cta: "Save More for Dad", image: "hammer.png" %>
+
+        <%= render "caredes/modules/promotions", title: "Save More Money", cta: "Save More for Dad", image: "hammer.png" %>
+    </div>
+</div>
+
+<div class="color-section callout">
+    <div class="container">
+        <h2 class="text-center">
+            Turn Your Items into Cash in Three Easy Steps
+        </h2>
+
+        <div class="text-center">        
+            <ul class="list-inline">
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+            </ul>
         </div>
 
     </div>
+</div>
+
+<div class="color-section">
+    <div class="container">
+        <%= render "caredes/modules/promotions", title: "Save More Money", cta: "Save More for Dad", image: "hammer.png" %>
 
 
+        <%= render "caredes/modules/promotions", title: "Save More Money", cta: "Save More for Dad", image: "hammer.png" %>
+
+    </div>
+</div>
 
 <% end %>
 

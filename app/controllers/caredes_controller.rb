@@ -4,7 +4,7 @@ class CaredesController < ApplicationController
     before_action :set_fixtures
     
     def index
-        render layout: "caredes"
+        render layout: "caredes_home"
     end
 
     def test

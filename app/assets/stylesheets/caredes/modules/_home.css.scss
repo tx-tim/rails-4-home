@@ -1,0 +1,28 @@
+.home-hero-section{
+    background-color: blue;
+}
+
+.color-section.callout{
+    background-color: #efefef;
+}
+
+.home-page{
+    .ca-module{
+        //background-color: #ffffff;
+    }
+
+    .j-promo{
+        .wrapper{
+            border-top: none;
+            border-bottom: 1px solid shade($body-bg, 8.5%);
+        }
+    }
+
+    .j-promo:last-child{
+        .wrapper{
+            border-top: none;
+            border-bottom: none;
+        }
+    }
+
+}

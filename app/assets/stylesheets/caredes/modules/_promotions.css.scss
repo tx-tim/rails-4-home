@@ -125,9 +125,16 @@
     overflow: hidden;
     padding-left: ($grid-gutter-width/2);
 
+    .image{
+        img.center{
+            margin: auto;
+        }
+    }
+
     .sidebar-link{
         display: none;
     }
+
     .wrapper{
         border-top: 1px solid shade($body-bg, 8.5%);
         border-bottom: 1px solid shade($body-bg, 8.5%);
