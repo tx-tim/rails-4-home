@@ -1,5 +1,7 @@
 .home-hero-section{
-    background-color: blue;
+    background-image: asset-url("facets-tile.png");
+    background-size: 200%;
+    height: 666px;
 }
 
 .color-section.callout{
@@ -7,8 +9,8 @@
 }
 
 .home-page{
-    .ca-module{
-        //background-color: #ffffff;
+    .header{
+        position: relative;
     }
 
     .j-promo{
@@ -22,6 +24,19 @@
         .wrapper{
             border-top: none;
             border-bottom: none;
+        }
+    }
+
+    @media (max-width: $screen-xs-max){
+        .j-promo{
+            background-color: $body-bg;
+            padding: $line-height-computed ($grid-gutter-width/2);
+            .image{
+                display: none;
+            }
+            .wrapper{
+                border: none;
+            }
         }
     }
 
