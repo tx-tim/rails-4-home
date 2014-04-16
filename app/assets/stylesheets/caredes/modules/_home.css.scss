@@ -1,7 +1,16 @@
 .home-hero-section{
-    background-image: asset-url("facets-tile.png");
+    //background-image: asset-url("facets-tile.png");
     background-size: 200%;
-    height: 666px;
+    ///height: 666px;
+    margin-bottom: $line-height-computed;
+}
+
+#addressSearch{
+    width: 200px;
+
+    @media (max-width: $screen-xs-max){
+        width: 100%;
+    }
 }
 
 
@@ -14,7 +23,8 @@
 
     .color-bg{
         background-color: rgb(18,94,171);
-        background-color: rgba(18,94,171,.8);
+        //background-color: rgba(18,94,171,.8);
+        background-color: rgba(7,73,130,.8);
         color: white;
         margin-top: $line-height-computed * 2;
         margin-bottom: $line-height-computed * 2;
@@ -31,6 +41,7 @@
 
     .header{
         position: relative;
+        background-image: asset-url("facets-tile.png");
     }
 
     .j-promo{
@@ -71,6 +82,10 @@
             .wrapper{
                 border: none;
             }
+        }
+
+        .hero-call-to-action button{
+            width: 100%;
         }
     }
 

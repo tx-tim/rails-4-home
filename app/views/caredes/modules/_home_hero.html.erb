@@ -1,14 +1,29 @@
 
 
-<section class="home-hero-section">
+<section class="home-hero-section bg-image-wrapper">
+    <%= image_tag "home/interior-bw.png" %>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-
-                <h1>
-                    Home Hero
-                </h1>
-
+        <div class="color-bg row">
+            <div class="generic-hero col-sm-12">
+                <div class="row">
+                    <div class="hero-graphic col-sm-12 text-center">
+                            <%= image_tag "home/bignav.png"%>
+                    </div>
+                    <div class="hero-text col-sm-8 col-sm-offset-2 color-ie8 text-center">
+                        <h1 class="">
+                            Find the Cash America Pawn Nearest You
+                        </h1>
+                    </div>
+                    <div class="hero-call-to-action col-sm-12 text-center">
+                        <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <label class="sr-only" for="addressSearch">Email address</label>
+                            <input type="address" class="form-control" id="addressSearch" placeholder="Enter zip, or city and state">
+                          </div>
+                          <button type="submit" class="btn btn-ca">Sign in</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
