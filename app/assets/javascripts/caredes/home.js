@@ -1,5 +1,11 @@
 console.log("home js")
 
 $(function(){
-    $(".bg-image-wrapper").imagecover();
+    try{
+        $(".bg-image-wrapper").imagecover();
+    }
+    catch(er){
+        $(".bg-image").hide();
+        console.log(er);
+    }
 });
