@@ -41,7 +41,9 @@
 
     .header{
         position: relative;
-        background-image: asset-url("facets-tile.png");
+        background-image: asset-url("bgbgbg.jpg");
+        background-size: cover;
+        background-position: 0 -200px;
     }
 
     .j-promo{
