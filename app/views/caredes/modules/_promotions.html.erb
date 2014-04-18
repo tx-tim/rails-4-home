@@ -2,13 +2,14 @@
 
 <% cta = "Call to Action" if local_assigns[:cta].nil? %>
 <% image = "ipad.png" if local_assigns[:image].nil? %>
+<% orientation = "img-right" if local_assigns[:orientation].nil? %>
 
 <!-- begin promo -->
 
 <div class="row ca-module j-promo">
     <div class="col-sm-12 wrapper">
         <div class="row">
-            <div class="col-sm-6 text">
+            <div class="col-sm-6 <%= 'col-sm-push-6' if orientation === 'img-left' %> text ">
                 <h2>
                     <%= title %>
                 </h2>
@@ -21,7 +22,7 @@
                 <%= link_to cta, "http://stores.ebay.com/cashamericainternetsales", class: "sidebar-link" %>
             </div>
 
-            <div class="col-sm-6 image">
+            <div class="col-sm-6 <%= 'col-sm-pull-6' if orientation === 'img-left' %>  image">
                 <%= image_tag image, class: "img-responsive center" %>
             </div>
         </div>
