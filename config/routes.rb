@@ -1,29 +1,30 @@
 Timothyproffitt::Application.routes.draw do
   
   get "casham/one_col"
-  root 'static_pages#home'
+  root "caredes#index"
   resources :sessions, only: [:new, :create, :destroy]
 
   resources :users
   
-  match "/", to: "static_pages#home", via: "get"
-  match "/signup", to: "users#new", via: "get"
-  match "/signin", to: "sessions#new", via: "get"
-  #match "/signout", to: "sessions#destroy", via: "delete"
-  match '/signout', :to => 'sessions#destroy', via: :delete
-  get "static_pages/help"
-  get "static_pages/about"
+  # #match "/", to: "static_pages#home", via: "get"
+  # match "/signup", to: "users#new", via: "get"
+  # match "/signin", to: "sessions#new", via: "get"
+  # #match "/signout", to: "sessions#destroy", via: "delete"
+  # match '/signout', :to => 'sessions#destroy', via: :delete
+  # get "static_pages/help"
+  # get "static_pages/about"
 
-  get "casham/index"
-  get "casham/article_module"
-  get "casham/store_search_page"
-  get "casham/style_guide"
-  get "casham/template_tcc"
-  get "casham/template_occ"
-  get "casham/demo"
-  get "cadsham/services_template"
+  # get "casham/index"
+  # get "casham/article_module"
+  # get "casham/store_search_page"
+  # get "casham/style_guide"
+  # get "casham/template_tcc"
+  # get "casham/template_occ"
+  # get "casham/demo"
+  # get "cadsham/services_template"
   
-
+  match "/", to: "caredes#index", via: "get"
+  match "caredes", to: "caredes#index", via: "get"
   get "caredes/index"
   get "caredes/test"
   get "caredes/pawn_loans"
