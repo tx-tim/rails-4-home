@@ -35,36 +35,40 @@
     </div>
 </div>
 
-<div class="color-section callout ca-module bg-image-wrapper">
-    <%= image_tag "home/deal-bw.png", class: "bg-image" %>
-    <div class="container">
-        <div class="color-bg row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="circle">1</div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="circle">2</div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="circle">3</div>
+<div class="color-section callout ca-module">
+    
+    <div class="bg-image-wrapper">
+        <%= image_tag "home/deal-bw.png", class: "bg-image" %>
+        <div class="container">
+            <div class="color-bg row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="circle">1</div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="circle">2</div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="circle">3</div>
+                        </div>
                     </div>
                 </div>
+                <h2 class="text-center col-sm-8 col-sm-offset-2 h1 color-ie8">
+                    Turn Your Items into Cash in Three Easy Steps
+                </h2>
             </div>
-            <h2 class="text-center col-sm-8 col-sm-offset-2 h1 color-ie8">
-                Turn Your Items into Cash in Three Easy Steps
-            </h2>
         </div>
     </div>
 
+    <%= render "caredes/modules/home_steps" %>
 </div>
 
 <div class="color-section">
     <div class="container">
 
 
-        <%= render "caredes/modules/home_steps" %>
+        
 
         <%= render "caredes/modules/promotions", orientation: "img-left", title: "Save More Money", cta: "Save More for Dad", image: "keys.jpg" %>
 

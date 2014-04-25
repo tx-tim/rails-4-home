@@ -67,6 +67,12 @@
         }
     }
 
+    .home-steps{
+        background-color: $primary-ca;
+        padding-top: $line-height-computed;
+        color: $white;
+    }
+
     .circle{
         background-color: white;
         border-radius: 50px;
