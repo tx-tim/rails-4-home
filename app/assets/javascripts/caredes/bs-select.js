@@ -1,7 +1,7 @@
 $(function(){
 
     if( $('.search-criteria-wrapper').length  ){
-        console.log('bs-select');
+        //console.log('bs-select');
         //STEP 2:
             $('li.option').click(function(event){
                 var miles = $(event.currentTarget).data('value');

@@ -11,7 +11,7 @@ $(function(){
                     return false; 
                 }
                 catch(ex){
-                    alert(ex);
+                    //alert(ex);
                     return false;
                 }
                 

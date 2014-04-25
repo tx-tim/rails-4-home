@@ -1,4 +1,4 @@
-console.log("home js")
+//console.log("home js")
 
 $(function(){
     // use try catch block in case Modernizr doesn't load
