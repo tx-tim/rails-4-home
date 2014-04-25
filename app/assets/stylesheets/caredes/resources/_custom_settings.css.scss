@@ -15,7 +15,7 @@ $primary-ca:        #005daa;
 $secondary-ca:      #D0103A;
 $selected-ca:       #e0e9f1;
 
-$footer-bg-ca:      #121D28;
+$footer-bg-ca:      #191919;
 $footer-text-ca:    #969696;
 
 // Typography
@@ -35,8 +35,8 @@ $standard-interval:       7px;
 $line-height-base:        1.5; // 21/14
 $line-height-computed:    $font-size-base * $line-height-base; // ~21px
 
-$font-size-h1:            44px;
-$line-height-h1:          $font-size-h1 * 1.41; // ~62px
+$font-size-h1:            38px;
+$line-height-h1:          $font-size-h1 * 1.63157; // ~62px
 $font-size-h2:            24px;
 $line-height-h2:          $font-size-h2 * 1.167; // ~28px
 $font-size-h3:            18px;

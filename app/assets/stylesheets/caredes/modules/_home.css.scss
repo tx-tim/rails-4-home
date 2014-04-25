@@ -3,6 +3,13 @@
     background-size: 200%;
     ///height: 666px;
     margin-bottom: $line-height-computed;
+
+    .hero-graphic{
+        margin-bottom: $line-height-computed;
+        img{ 
+            max-height: 210px;
+        }
+    }
 }
 
 #addressSearch{
