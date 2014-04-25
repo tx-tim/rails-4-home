@@ -1,11 +1,16 @@
 console.log("home js")
 
 $(function(){
+    // use try catch block in case Modernizr doesn't load
     try{
-        $(".bg-image-wrapper").imagecover();
+        if(Modernizr.multiplebgs){
+            $(".bg-image-wrapper").imagecover();
+        }
+        else{
+            throw ('multiplebgs not supported')
+        }
     }
     catch(er){
         $(".bg-image").hide();
-        console.log(er);
     }
 });
